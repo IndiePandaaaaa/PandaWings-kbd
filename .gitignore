@@ -21,7 +21,9 @@ _autosave-*
 *-rescue.dcm
 *.kicad_prl
 fp-info-cache
+report.txt
 gerber/
+gbr/
 
 # Netlist files (exported from Eeschema)
 *.net
