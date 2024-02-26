@@ -1,5 +1,5 @@
 [submodule "corne-cherry/pcb/kbd"]
-	path = corne-cherry/pcb/kbd
+	path = PandaWings/pcb/kbd
 	url = https://github.com/foostan/kbd
 [submodule "corne-light/pcb/kbd"]
 	path = corne-light/pcb/kbd
