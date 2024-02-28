@@ -5,10 +5,11 @@
   (paper "A3")
 
   (title_block
-    (title "Corne Cherry Panda")
+    (title "PandaWings")
     (date "2024-01-13")
     (rev "1.0")
-    (company "foostan")
+    (company "IndiePandaaaaa")
+    (comment 1 "forked from foostan/crkbd")
   )
 
   (lib_symbols
@@ -3349,7 +3350,7 @@
     (pin "1" (uuid 8df5f636-42ee-46f4-9931-14c7637a0671))
     (pin "2" (uuid db455831-b880-4d6f-bdd4-c31e5e908731))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "SW2") (unit 1)
         )
@@ -3375,7 +3376,7 @@
     (pin "1" (uuid 5e630055-7457-4c1f-9776-bc85baa7bcb4))
     (pin "2" (uuid bea5398e-74d3-4643-b6da-12bbb693d0e6))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "D2") (unit 1)
         )
@@ -3401,7 +3402,7 @@
     (pin "1" (uuid 41a92874-b399-4a8c-95fa-84268a026f56))
     (pin "2" (uuid 160f9a45-e352-4aa6-89ad-065edcd2168b))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "SW3") (unit 1)
         )
@@ -3427,7 +3428,7 @@
     (pin "1" (uuid 14511e44-b04e-4bd7-822d-a23fa618c683))
     (pin "2" (uuid 94044ef8-640c-4dbf-9acb-19459d2bfe32))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "D3") (unit 1)
         )
@@ -3453,7 +3454,7 @@
     (pin "1" (uuid 0cdb0327-47fd-4148-9a89-cf9503f163fa))
     (pin "2" (uuid 193e30d4-5650-4268-82c5-31464bd1b788))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "SW4") (unit 1)
         )
@@ -3479,7 +3480,7 @@
     (pin "1" (uuid cf06febf-4e1c-4001-9d4f-6b0acc23a7b9))
     (pin "2" (uuid 74137b4b-8cf6-430e-89b4-903ba7476ce4))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "SW5") (unit 1)
         )
@@ -3505,7 +3506,7 @@
     (pin "1" (uuid 8bf55ca5-85d5-4f94-a229-fed233cb1232))
     (pin "2" (uuid 73470526-010f-4414-86d1-3b655dd4643e))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "SW6") (unit 1)
         )
@@ -3531,7 +3532,7 @@
     (pin "1" (uuid 8e6fd9f3-a235-4a17-b0c1-66f9e6376b69))
     (pin "2" (uuid 73bc4942-57fb-4c5f-90d0-77e5663b1ff8))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "D4") (unit 1)
         )
@@ -3557,7 +3558,7 @@
     (pin "1" (uuid a92953e1-daf4-46c0-b145-eb54eab5c2ba))
     (pin "2" (uuid b4bcd7cd-b7d9-49ed-9e91-7fc5b549a258))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "D5") (unit 1)
         )
@@ -3583,7 +3584,7 @@
     (pin "1" (uuid 66be461b-6186-49ea-963d-eefd45be4c69))
     (pin "2" (uuid 5ddadbac-1c01-4537-b1ef-3bb6715e59d1))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "D6") (unit 1)
         )
@@ -3609,7 +3610,7 @@
     (pin "1" (uuid 13463f22-9f50-43db-a8b3-f0f022d937a7))
     (pin "2" (uuid 088b3348-ef3a-4977-843d-3c430210e504))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "SW8") (unit 1)
         )
@@ -3635,7 +3636,7 @@
     (pin "1" (uuid c10cc2c8-6401-4cf4-8e12-d8b659ad089c))
     (pin "2" (uuid 0ae55112-7579-436f-b2b9-d39f0c3a0f88))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "D8") (unit 1)
         )
@@ -3661,7 +3662,7 @@
     (pin "1" (uuid 6ca549c6-9aa9-480b-98d0-09cf4fdd8b9f))
     (pin "2" (uuid 92e51f02-e97c-4cda-8c1a-39b31916638f))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "SW9") (unit 1)
         )
@@ -3687,7 +3688,7 @@
     (pin "1" (uuid 43f6e433-4e3f-4fdf-8ff5-066245e0be95))
     (pin "2" (uuid 75a7a5c4-f5d6-4b9b-b093-ea56a09a9892))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "D9") (unit 1)
         )
@@ -3713,7 +3714,7 @@
     (pin "1" (uuid e5524aff-67fd-4e6f-aa1f-ce3eda6fba52))
     (pin "2" (uuid f0268eef-5012-4c4d-8dc9-7b32ca8b03ac))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "SW10") (unit 1)
         )
@@ -3739,7 +3740,7 @@
     (pin "1" (uuid ada209b8-a6cf-4e11-8237-5ef08dede7a8))
     (pin "2" (uuid a6bef5d3-da1c-4ad0-93ee-1237d2466d19))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "SW11") (unit 1)
         )
@@ -3765,7 +3766,7 @@
     (pin "1" (uuid 2ef3f2e8-1867-4152-82d5-48c0b352bcba))
     (pin "2" (uuid d7b16f89-40ff-473c-a464-fe0a1f40a6a9))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "SW12") (unit 1)
         )
@@ -3791,7 +3792,7 @@
     (pin "1" (uuid b1bf428e-2ce4-4dda-8d08-c94329e1bb4b))
     (pin "2" (uuid d93f9aa1-7777-4370-b9c2-6295d152e28b))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "D10") (unit 1)
         )
@@ -3817,7 +3818,7 @@
     (pin "1" (uuid 085effa1-2b5d-424a-8bbc-ffb6b9f88c45))
     (pin "2" (uuid 5b1ef3e8-bbfe-4042-8ae1-b2dd213bfdfd))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "D11") (unit 1)
         )
@@ -3843,7 +3844,7 @@
     (pin "1" (uuid 69598555-b24e-4a91-923f-40f2074c2f37))
     (pin "2" (uuid bf06940f-9384-4ded-93e1-bafc7c0912b4))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "D12") (unit 1)
         )
@@ -3869,7 +3870,7 @@
     (pin "1" (uuid e5dc5592-f7dc-4a36-8172-66d81ace016e))
     (pin "2" (uuid 3e951a69-2b54-4ea6-84c4-fdde64f6b78c))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "SW7") (unit 1)
         )
@@ -3895,7 +3896,7 @@
     (pin "1" (uuid fbda9a73-d066-4531-a340-da834d6744dc))
     (pin "2" (uuid 45a52c19-847b-493f-9a17-f96692dd3ded))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "D7") (unit 1)
         )
@@ -3921,7 +3922,7 @@
     (pin "1" (uuid 9960cb76-e127-47d3-85ba-dcc9d330c67e))
     (pin "2" (uuid 1729c411-fd93-46be-93c6-152da667f245))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "SW14") (unit 1)
         )
@@ -3947,7 +3948,7 @@
     (pin "1" (uuid 5eb19ba6-38f3-4c07-b583-a6d81393f6c6))
     (pin "2" (uuid e46dd28a-8015-47f0-af2f-e8918dc0c5f4))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "D14") (unit 1)
         )
@@ -3973,7 +3974,7 @@
     (pin "1" (uuid cfb4a677-5900-486f-aa9d-0db41ac715d0))
     (pin "2" (uuid dc6bf3a7-2e14-4032-a289-ed645a57b7a9))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "SW15") (unit 1)
         )
@@ -3999,7 +4000,7 @@
     (pin "1" (uuid 0a2ff0b8-ca50-4d7a-b3e5-9ed337a2daac))
     (pin "2" (uuid f3c4edda-7bc4-45f0-9236-75b739e4b4e2))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "D15") (unit 1)
         )
@@ -4025,7 +4026,7 @@
     (pin "1" (uuid fbdc7776-ee3b-40e9-a95e-d85cd3fb5028))
     (pin "2" (uuid 75f6f1c3-6253-4aa4-b8e6-04d308ddd1b1))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "SW16") (unit 1)
         )
@@ -4051,7 +4052,7 @@
     (pin "1" (uuid 8c452721-b387-475c-99a3-c826b651ed9e))
     (pin "2" (uuid 58d78fe3-ddd5-4cbc-86c6-070925bb48cb))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "SW17") (unit 1)
         )
@@ -4077,7 +4078,7 @@
     (pin "1" (uuid 5be670a0-06aa-4b95-981e-04f162bc508a))
     (pin "2" (uuid 72780d9a-d12d-41f1-880a-77f864fb89a7))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "SW18") (unit 1)
         )
@@ -4103,7 +4104,7 @@
     (pin "1" (uuid 796d6752-52df-48c8-bb24-418ea8c81b58))
     (pin "2" (uuid 95cf3e47-b2a5-452e-b91c-08f0bc57db5f))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "D16") (unit 1)
         )
@@ -4129,7 +4130,7 @@
     (pin "1" (uuid 44b3996d-5daf-4e13-9281-73e65a65a335))
     (pin "2" (uuid f1d1e53b-cf0b-4680-bcee-7169c084084b))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "D17") (unit 1)
         )
@@ -4155,7 +4156,7 @@
     (pin "1" (uuid 75439a5a-e809-4df4-b9b4-cfc916aa4842))
     (pin "2" (uuid 87431112-c074-42ca-8954-18c45f8ba3ad))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "D18") (unit 1)
         )
@@ -4181,7 +4182,7 @@
     (pin "1" (uuid 11af8888-44fe-47f5-99d4-005c2df3fb00))
     (pin "2" (uuid 41bfd8d6-ac07-49aa-9380-50dbc726d13d))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "SW13") (unit 1)
         )
@@ -4207,7 +4208,7 @@
     (pin "1" (uuid 0184a8dd-eee5-4702-8c34-3ef3ee2ec0bf))
     (pin "2" (uuid a3c48b19-b0c8-4b99-afab-024c8a96138e))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "D13") (unit 1)
         )
@@ -4233,7 +4234,7 @@
     (pin "1" (uuid 006fa9a0-c453-444f-af25-4a4a9f4a0200))
     (pin "2" (uuid c41a80c5-0bea-4611-a486-2005b4944db3))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "SW20") (unit 1)
         )
@@ -4259,7 +4260,7 @@
     (pin "1" (uuid 4b2829a5-00ef-4c8b-9c4c-d329b2fa51c0))
     (pin "2" (uuid 180966e6-4d61-42e3-a430-93df4f5327f1))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "D20") (unit 1)
         )
@@ -4285,7 +4286,7 @@
     (pin "1" (uuid 061243c8-6a93-43b1-b1c8-a64af58ceb11))
     (pin "2" (uuid 03c2b8f8-36ac-4e3f-a2f2-77f70f4eb281))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "SW21") (unit 1)
         )
@@ -4311,7 +4312,7 @@
     (pin "1" (uuid 6d36baf6-8b70-4e0a-a85e-ea311ed91f95))
     (pin "2" (uuid c4483706-9947-434b-9634-106033cac1b9))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "D21") (unit 1)
         )
@@ -4337,7 +4338,7 @@
     (pin "1" (uuid e7acaa4d-34e1-4921-b45c-4a663bdc37ae))
     (pin "2" (uuid 63401d6e-46ca-4354-a30c-32581a25d3b1))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "SW19") (unit 1)
         )
@@ -4363,7 +4364,7 @@
     (pin "1" (uuid 028d5de1-4bfa-42ce-8434-8dfa34dd249a))
     (pin "2" (uuid 9ead7303-9d14-472a-83c1-650c1c90471a))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "D19") (unit 1)
         )
@@ -4388,7 +4389,7 @@
     )
     (pin "1" (uuid e690f066-dda4-4fb5-bb92-64a34f7b0164))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "#PWR04") (unit 1)
         )
@@ -4413,7 +4414,7 @@
     )
     (pin "1" (uuid bcb78ee8-7341-40f4-88ba-c5582cdbc908))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "#PWR05") (unit 1)
         )
@@ -4438,7 +4439,7 @@
     )
     (pin "1" (uuid 27d2142d-cfd3-4104-805b-fcea7b34dea4))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "#FLG02") (unit 1)
         )
@@ -4463,7 +4464,7 @@
     )
     (pin "1" (uuid bb73e36f-12d3-4db4-80ad-c14ac772dd67))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "#FLG01") (unit 1)
         )
@@ -4488,7 +4489,7 @@
     )
     (pin "1" (uuid ebfea65b-2a4d-47ef-9eaf-9117ff877694))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "#PWR013") (unit 1)
         )
@@ -4514,7 +4515,7 @@
     (pin "1" (uuid 86ed77e0-ded1-48e5-91b3-da8f132a6458))
     (pin "2" (uuid 02c97401-36f8-4b23-9773-b5337a2908e4))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "SW23") (unit 1)
         )
@@ -4540,7 +4541,7 @@
     (pin "1" (uuid 826ad8d6-f396-4412-bc24-94e9c7d6ec93))
     (pin "2" (uuid 25d3753f-f521-4786-83ac-df677ac006b1))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "D23") (unit 1)
         )
@@ -4566,7 +4567,7 @@
     (pin "1" (uuid b7cf05b5-93f6-4869-9e27-7cb2fda9f62d))
     (pin "2" (uuid 5ea3f7e0-2af9-4233-8686-8c7f48d5b45c))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "SW24") (unit 1)
         )
@@ -4592,7 +4593,7 @@
     (pin "1" (uuid 12583750-96d2-45ff-8f28-56d5743e7a0f))
     (pin "2" (uuid c3c873c3-9240-4a3c-839e-39b53f94413b))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "D24") (unit 1)
         )
@@ -4618,7 +4619,7 @@
     (pin "1" (uuid 5e75c378-5856-415c-b340-3cb47faa78f0))
     (pin "2" (uuid 15e9dbcc-eae2-4721-9e65-71d47a5c5889))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "SW25") (unit 1)
         )
@@ -4644,7 +4645,7 @@
     (pin "1" (uuid bd293a88-5a3c-4101-9bc3-cef7f5c9801a))
     (pin "2" (uuid d2623357-9bf5-4306-b76a-4a9dde21f3e3))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "SW26") (unit 1)
         )
@@ -4670,7 +4671,7 @@
     (pin "1" (uuid 05cc7bdc-dbbb-4dc4-850d-a9df87c8b65e))
     (pin "2" (uuid c7e01df5-cee1-489f-add7-fe0373765bd1))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "SW27") (unit 1)
         )
@@ -4696,7 +4697,7 @@
     (pin "1" (uuid 297041cc-bdfd-4f3b-b3c8-716324e36215))
     (pin "2" (uuid e2232d0c-ce5b-4a54-b2af-0babac4ac17f))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "D25") (unit 1)
         )
@@ -4722,7 +4723,7 @@
     (pin "1" (uuid 8d2ace23-ca0b-495b-9d12-c7232c7e51b3))
     (pin "2" (uuid 7de67389-61ba-44d4-8541-17c3896fdc57))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "D26") (unit 1)
         )
@@ -4748,7 +4749,7 @@
     (pin "1" (uuid c75591a1-33e6-4d24-8110-ce7be6195e1f))
     (pin "2" (uuid 92c89710-5557-4d85-92b0-17a7a6d13148))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "D27") (unit 1)
         )
@@ -4774,7 +4775,7 @@
     (pin "1" (uuid d7415a8c-cd1f-4a2e-9f1d-354c18224805))
     (pin "2" (uuid f16fa7f2-ef36-4944-bf2f-a8985c09f7d4))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "SW29") (unit 1)
         )
@@ -4800,7 +4801,7 @@
     (pin "1" (uuid 201e39da-b465-445d-8703-5f9da7b9c03d))
     (pin "2" (uuid f6d1bfc5-b741-45db-b612-56de4a020cb0))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "D29") (unit 1)
         )
@@ -4826,7 +4827,7 @@
     (pin "1" (uuid 2231e8c1-b8a2-45d8-8405-236eec1d4d36))
     (pin "2" (uuid 1d2616c5-022e-4160-8fe1-c478e7d0b850))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "SW30") (unit 1)
         )
@@ -4852,7 +4853,7 @@
     (pin "1" (uuid 0a1c1340-ad9c-4f91-aa01-7942af8fe8e4))
     (pin "2" (uuid 4cd00b98-fb26-4086-934d-925af65e0f8f))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "D30") (unit 1)
         )
@@ -4878,7 +4879,7 @@
     (pin "1" (uuid ffbc0721-2251-4f22-9a21-d17b2a50d120))
     (pin "2" (uuid 870d9818-fc8c-4693-8e80-fe35f65f47dd))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "SW31") (unit 1)
         )
@@ -4904,7 +4905,7 @@
     (pin "1" (uuid 23897aa0-d627-45b3-97c2-ec26033d4811))
     (pin "2" (uuid ac66a0c0-fa1d-440b-9a61-f37e3eb5e750))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "SW32") (unit 1)
         )
@@ -4930,7 +4931,7 @@
     (pin "1" (uuid 80a5fad1-636b-4a29-ad14-6efc375cfe2f))
     (pin "2" (uuid db047844-29fe-432a-a581-e8cf80faf729))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "SW33") (unit 1)
         )
@@ -4956,7 +4957,7 @@
     (pin "1" (uuid 08c994ea-578b-41b9-bd66-71c5b5ad8fd6))
     (pin "2" (uuid 4dff1a67-2466-4c8b-88d7-71d6e386a362))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "D31") (unit 1)
         )
@@ -4982,7 +4983,7 @@
     (pin "1" (uuid 9924d98d-dd27-4ef8-800c-09692cb24175))
     (pin "2" (uuid f60b162e-47da-4ebd-af70-e28f5a2a001f))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "D32") (unit 1)
         )
@@ -5008,7 +5009,7 @@
     (pin "1" (uuid 57fc8235-ed99-4ac7-852a-72229e37fec9))
     (pin "2" (uuid e2de6248-19b8-4627-b440-6487c5f94a4f))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "D33") (unit 1)
         )
@@ -5034,7 +5035,7 @@
     (pin "1" (uuid 1a8f3616-648f-4682-82aa-b6f947eb5e54))
     (pin "2" (uuid 3e5e41c4-b764-4f7b-8dc7-cb645455d595))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "SW28") (unit 1)
         )
@@ -5060,7 +5061,7 @@
     (pin "1" (uuid ee493595-8070-4dbf-b214-864b37521374))
     (pin "2" (uuid 58d05d32-a8e3-4c66-ab73-b28e5fb0c863))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "D28") (unit 1)
         )
@@ -5086,7 +5087,7 @@
     (pin "1" (uuid b68da070-06c1-47ad-9ae0-6e2683d4292c))
     (pin "2" (uuid ba889370-ece0-4996-9ade-5c1c3f89dbe2))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "SW35") (unit 1)
         )
@@ -5112,7 +5113,7 @@
     (pin "1" (uuid 430e4219-22be-4241-84b9-c89536630a5d))
     (pin "2" (uuid 9d09c10b-c88c-4c9b-8dfb-64cd01cc5a7b))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "D35") (unit 1)
         )
@@ -5138,7 +5139,7 @@
     (pin "1" (uuid 377044a5-e18c-4482-9efb-1d00df3acf67))
     (pin "2" (uuid 096a9b27-9d30-47f5-9c89-7f7d0f45ed7c))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "SW36") (unit 1)
         )
@@ -5164,7 +5165,7 @@
     (pin "1" (uuid 4367a83c-d4ec-432e-9757-a5642fd81e47))
     (pin "2" (uuid 39864cb2-8de1-4d2a-b082-55c4d0eb8b5d))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "D36") (unit 1)
         )
@@ -5190,7 +5191,7 @@
     (pin "1" (uuid a1c4aed6-1a9e-49cf-99eb-bd54f1045274))
     (pin "2" (uuid e886b69b-3ae7-403e-8c00-f0d50803a658))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "SW37") (unit 1)
         )
@@ -5216,7 +5217,7 @@
     (pin "1" (uuid 2040a1e2-2282-4ccb-b4d7-f6e690ec3bf1))
     (pin "2" (uuid f6ee5ceb-176f-459a-a149-55cc14b48334))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "SW38") (unit 1)
         )
@@ -5242,7 +5243,7 @@
     (pin "1" (uuid 74fd5398-dbe6-49ea-893c-03857536fdf1))
     (pin "2" (uuid 2b91268b-0b66-48fc-9fca-7074fd2b2f9a))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "SW39") (unit 1)
         )
@@ -5268,7 +5269,7 @@
     (pin "1" (uuid 7ce53e5d-57f6-48a4-98a9-4113f9e76bbe))
     (pin "2" (uuid c9048e48-7147-41d5-bb24-d27ed1e6338d))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "D37") (unit 1)
         )
@@ -5294,7 +5295,7 @@
     (pin "1" (uuid 7cb34749-63b4-4fad-9377-ac5a6bdc40a0))
     (pin "2" (uuid a13655d7-f51e-497a-96f5-bca6c97d7ce3))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "D38") (unit 1)
         )
@@ -5320,7 +5321,7 @@
     (pin "1" (uuid 3264cfcd-9cb3-43cb-9b10-6d089ca411b3))
     (pin "2" (uuid 04f07f6f-69a6-44cb-b14a-46678fefdcae))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "D39") (unit 1)
         )
@@ -5346,7 +5347,7 @@
     (pin "1" (uuid 05af8bf5-eeac-43ff-ae4f-a1fd1dcce88f))
     (pin "2" (uuid 2d5a74f8-a613-42cb-bda7-170eebc6ab42))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "SW34") (unit 1)
         )
@@ -5372,7 +5373,7 @@
     (pin "1" (uuid a3c4fa22-bda0-4d01-8ca0-dab3bdca4dcd))
     (pin "2" (uuid cd9fb829-ac8a-41ed-98d6-b12210260050))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "D34") (unit 1)
         )
@@ -5398,7 +5399,7 @@
     (pin "1" (uuid fc803f4a-4c77-4611-9cec-0d4cb6fcb749))
     (pin "2" (uuid 1be913c8-c98f-4e7d-b3fa-3da402c80df1))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "SW41") (unit 1)
         )
@@ -5424,7 +5425,7 @@
     (pin "1" (uuid a679f567-da3d-4695-b836-b2daec31cc67))
     (pin "2" (uuid d42655df-6e31-4fec-b78a-47303882ddd1))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "D41") (unit 1)
         )
@@ -5450,7 +5451,7 @@
     (pin "1" (uuid e844d0ab-c208-46f0-aca0-bd38e26e3b58))
     (pin "2" (uuid e49df871-a097-4037-8eab-3c13064064d9))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "SW42") (unit 1)
         )
@@ -5476,7 +5477,7 @@
     (pin "1" (uuid 0dedb2b4-85e2-479b-a0dc-4f034b106520))
     (pin "2" (uuid 1554bcc1-c347-4dd4-85e4-0ab0154893ce))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "D42") (unit 1)
         )
@@ -5502,7 +5503,7 @@
     (pin "1" (uuid 96b2ddc0-36aa-48e7-afa3-06a7faf26eed))
     (pin "2" (uuid 18acb8a3-fb98-45f5-85c0-48e9a0f924c4))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "SW40") (unit 1)
         )
@@ -5528,7 +5529,7 @@
     (pin "1" (uuid 131dd88d-e61f-4273-ba2a-343b2f51535e))
     (pin "2" (uuid fd3247bd-70f1-44fa-99b2-633cffeefa94))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "D40") (unit 1)
         )
@@ -5553,7 +5554,7 @@
     )
     (pin "1" (uuid 4873fbe6-cf01-4106-9442-72e0f2d7ac10))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "#PWR024") (unit 1)
         )
@@ -5578,7 +5579,7 @@
     )
     (pin "1" (uuid c8bd4505-c361-429f-91ce-fd3626e144ad))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "#FLG04") (unit 1)
         )
@@ -5603,7 +5604,7 @@
     )
     (pin "1" (uuid e90366a3-3b77-45ea-b17b-2f5f4a4ad304))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "#PWR016") (unit 1)
         )
@@ -5628,7 +5629,7 @@
     )
     (pin "1" (uuid 05d055f2-6934-470f-8ea6-1bcad9b48e7f))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "#PWR015") (unit 1)
         )
@@ -5653,7 +5654,7 @@
     )
     (pin "1" (uuid 7e73a7f9-df28-478f-8e2e-67652225c875))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "#FLG03") (unit 1)
         )
@@ -5681,7 +5682,7 @@
     (pin "3" (uuid 4f1ae84a-5741-4da2-867d-c5bf86755620))
     (pin "4" (uuid 81a4d332-3a5e-4d3c-a611-4f832443b04d))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "LED7") (unit 1)
         )
@@ -5709,7 +5710,7 @@
     (pin "3" (uuid 7fe90b06-78d8-4b19-b01f-4a528486d1bb))
     (pin "4" (uuid 8bef90cb-70a7-404a-ab53-479e5c6ed1b6))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "LED3") (unit 1)
         )
@@ -5737,7 +5738,7 @@
     (pin "3" (uuid 1e69cfdf-ce35-4d70-ae63-c22eaea6830a))
     (pin "4" (uuid 8db3f0b0-4d09-4d8e-97d1-b91c151e1da9))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "LED2") (unit 1)
         )
@@ -5765,7 +5766,7 @@
     (pin "3" (uuid 8cd3feba-de99-464b-80ba-a02b38637157))
     (pin "4" (uuid 5020dfea-db72-4abc-b44a-73edc4b32f15))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "LED8") (unit 1)
         )
@@ -5793,7 +5794,7 @@
     (pin "3" (uuid b81578f4-2319-4b8b-8a67-c60e6280ebdc))
     (pin "4" (uuid bc5aaaef-186c-4f6d-a401-8eb1f87b483e))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "LED1") (unit 1)
         )
@@ -5821,7 +5822,7 @@
     (pin "3" (uuid ccf1f8b7-0342-49cc-b167-7eaecefc1fb0))
     (pin "4" (uuid 76fa4471-5750-4830-8ff3-9813020394cb))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "LED9") (unit 1)
         )
@@ -5849,7 +5850,7 @@
     (pin "3" (uuid d68aaa04-0c51-48ed-bbc9-2465a9f07220))
     (pin "4" (uuid a7634bfb-d2d4-4dbe-b92e-f68a88d60687))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "LED10") (unit 1)
         )
@@ -5877,7 +5878,7 @@
     (pin "3" (uuid e36c2f1c-d0ab-4956-b420-5ff442bf9b71))
     (pin "4" (uuid c367933e-7207-4de7-9ecc-566d3e2ea5df))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "LED11") (unit 1)
         )
@@ -5905,7 +5906,7 @@
     (pin "3" (uuid 9b47efc5-397d-4233-b6ae-3bd44e7096c5))
     (pin "4" (uuid efaca39b-146e-48d5-ba66-6bb869e8ce83))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "LED12") (unit 1)
         )
@@ -5933,7 +5934,7 @@
     (pin "3" (uuid d7cfc5fa-6574-47c2-ac47-2848a2d797b2))
     (pin "4" (uuid 676b6a6a-73e6-45ff-b0dc-0892bd4b88dc))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "LED5") (unit 1)
         )
@@ -5961,7 +5962,7 @@
     (pin "3" (uuid 6cba159a-a5a2-4280-8fcd-80760e3237c0))
     (pin "4" (uuid 20318fe4-b00f-4433-8ac3-376bca378d06))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "LED6") (unit 1)
         )
@@ -5989,7 +5990,7 @@
     (pin "3" (uuid 0b442f39-7166-42a4-88aa-30c0de891341))
     (pin "4" (uuid 8defb877-3096-4726-b68a-e0384ac4564b))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "LED4") (unit 1)
         )
@@ -6017,7 +6018,7 @@
     (pin "3" (uuid 4acc67ba-8480-4042-b619-7ba29c4e65ee))
     (pin "4" (uuid 50f5b87d-18a7-45c4-902b-f717447a65a8))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "LED13") (unit 1)
         )
@@ -6045,7 +6046,7 @@
     (pin "3" (uuid 52d44680-b371-43cc-8bd2-e426eb388bf8))
     (pin "4" (uuid 22c71469-e271-4919-b8bd-031ea1dca7f6))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "LED14") (unit 1)
         )
@@ -6073,7 +6074,7 @@
     (pin "3" (uuid c479230b-cebd-4553-89f4-f7afefd991e1))
     (pin "4" (uuid 978e7b7a-3cb8-42de-8437-060315b1e877))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "LED15") (unit 1)
         )
@@ -6101,7 +6102,7 @@
     (pin "3" (uuid 1bc396c2-cffe-41fe-95ae-9f63ebb62a5c))
     (pin "4" (uuid ab22eca1-3da5-44b1-b59b-666e8e620b5a))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "LED16") (unit 1)
         )
@@ -6129,7 +6130,7 @@
     (pin "3" (uuid 4ac3fe0f-b434-4a13-9851-16a47ab44b7c))
     (pin "4" (uuid cbbdb966-6f74-4dda-b630-a3df4294d9b1))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "LED17") (unit 1)
         )
@@ -6157,7 +6158,7 @@
     (pin "3" (uuid 796a8abe-6718-4efe-b46d-744101137747))
     (pin "4" (uuid a801710b-f6f7-4a51-860b-eaff2d5b2e15))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "LED18") (unit 1)
         )
@@ -6185,7 +6186,7 @@
     (pin "3" (uuid 0e9d6003-880a-448e-b750-0752a2800855))
     (pin "4" (uuid d7dd5461-2e3e-4bd7-8eb4-a18930dde53f))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "LED20") (unit 1)
         )
@@ -6213,7 +6214,7 @@
     (pin "3" (uuid 958d6815-a227-4aca-8911-fcb99b2a6172))
     (pin "4" (uuid 65c4062c-7bf1-4679-bcc0-3f83e05c8e0f))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "LED21") (unit 1)
         )
@@ -6241,7 +6242,7 @@
     (pin "3" (uuid a700d88a-f12f-41f1-9f8c-d0ef3ec34793))
     (pin "4" (uuid dec1dfc6-1abe-4404-b4a6-f28e8c36af11))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "LED22") (unit 1)
         )
@@ -6269,7 +6270,7 @@
     (pin "3" (uuid 999f2eef-a1ff-4a51-8f0d-6c7206436a5c))
     (pin "4" (uuid e1ec5d09-1418-47cf-b618-be696883737a))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "LED23") (unit 1)
         )
@@ -6297,7 +6298,7 @@
     (pin "3" (uuid a5830ed1-57ff-42b9-b799-5bb65f644cc4))
     (pin "4" (uuid cf018105-fec1-46c8-9484-41a6b873e5fb))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "LED24") (unit 1)
         )
@@ -6325,7 +6326,7 @@
     (pin "3" (uuid 4fb39990-0cd8-4590-bd9a-2166d11cd294))
     (pin "4" (uuid 19849239-18b6-49a2-8188-7b2f86cdc9c2))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "LED25") (unit 1)
         )
@@ -6353,7 +6354,7 @@
     (pin "3" (uuid d9898ab0-11fe-4f79-9ed7-83ea0c30ef83))
     (pin "4" (uuid 34ee9afa-783b-476c-8a06-63c7f89e0b75))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "LED26") (unit 1)
         )
@@ -6381,7 +6382,7 @@
     (pin "3" (uuid 1b2dfafb-e941-48c2-bde3-5be1ef8161a0))
     (pin "4" (uuid dbb13120-e2b1-4d34-ad09-19ffe0c3df24))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "LED27") (unit 1)
         )
@@ -6406,7 +6407,7 @@
     )
     (pin "1" (uuid ec2075d5-7c6b-4acc-8dc0-a78d7e767419))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "#PWR014") (unit 1)
         )
@@ -6431,7 +6432,7 @@
     )
     (pin "1" (uuid b1531463-cc4f-437e-a37e-5b174d436093))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "#PWR02") (unit 1)
         )
@@ -6456,7 +6457,7 @@
     )
     (pin "1" (uuid 82879ffc-3b85-4bb3-8f63-6516edd48008))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "#PWR01") (unit 1)
         )
@@ -6484,7 +6485,7 @@
     (pin "3" (uuid 40d0b9e9-ca4c-484f-9cd1-49e9db989d35))
     (pin "4" (uuid eb3deed5-0449-4c99-916e-50777f1d58f3))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "LED34") (unit 1)
         )
@@ -6512,7 +6513,7 @@
     (pin "3" (uuid ee867d97-3549-4495-b487-06b3b9fc21c9))
     (pin "4" (uuid f21ccfda-40c8-453a-a2b3-58e270cae6ab))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "LED35") (unit 1)
         )
@@ -6540,7 +6541,7 @@
     (pin "3" (uuid 4beb0712-73fc-4037-9e06-1b1b3b383872))
     (pin "4" (uuid 673e35ff-85c5-479a-bee2-8f9790461973))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "LED36") (unit 1)
         )
@@ -6568,7 +6569,7 @@
     (pin "3" (uuid eb6dd2a5-7fb6-468d-adaf-52057e54a263))
     (pin "4" (uuid 91e1c53c-16fd-49af-9947-ed340beb6752))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "LED37") (unit 1)
         )
@@ -6596,7 +6597,7 @@
     (pin "3" (uuid 2dae492b-b1bf-4c32-956f-48cdf860a8f0))
     (pin "4" (uuid f4c17e38-ff1b-4b2e-9c7c-cbce2ce3c608))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "LED38") (unit 1)
         )
@@ -6624,7 +6625,7 @@
     (pin "3" (uuid 8e08cc15-4648-4e86-a120-0f9f6dcd2de9))
     (pin "4" (uuid a0a1891e-5f5e-4197-a2d5-e3d1734df2d1))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "LED39") (unit 1)
         )
@@ -6652,7 +6653,7 @@
     (pin "3" (uuid 89099ba2-d893-40d9-b051-905a15184f5c))
     (pin "4" (uuid d24647cc-c0f1-4863-8a3f-da3a75ea1770))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "LED40") (unit 1)
         )
@@ -6680,7 +6681,7 @@
     (pin "3" (uuid 5e6225f4-59a2-4c74-b506-e8661dbcf143))
     (pin "4" (uuid 6c0dd228-b8c7-44cb-a119-9f8c844371d9))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "LED41") (unit 1)
         )
@@ -6708,7 +6709,7 @@
     (pin "3" (uuid 8790ba29-02fc-485c-a842-e42aba1a0617))
     (pin "4" (uuid daefe063-1665-4f40-b878-c1b328e63561))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "LED42") (unit 1)
         )
@@ -6736,7 +6737,7 @@
     (pin "3" (uuid b66bd60a-8467-45f8-80eb-0d312c24f9fb))
     (pin "4" (uuid 8f4bd8d3-ef27-42d2-a11d-c981a1fa6c1d))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "LED43") (unit 1)
         )
@@ -6764,7 +6765,7 @@
     (pin "3" (uuid a1594778-3c01-42e8-9b75-72436da9504f))
     (pin "4" (uuid b3f2d72c-1cf7-471d-8fe1-19f7435cb097))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "LED44") (unit 1)
         )
@@ -6792,7 +6793,7 @@
     (pin "3" (uuid 64f46225-0eff-49f4-80e3-bbee478e0326))
     (pin "4" (uuid 24a304cd-c8f2-405a-826a-dd8930593d3a))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "LED45") (unit 1)
         )
@@ -6820,7 +6821,7 @@
     (pin "3" (uuid 13ed269d-1545-4b5d-bcbd-b79b70eacdf8))
     (pin "4" (uuid 671a3afb-dc11-4467-846c-f7c5572c2aaf))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "LED47") (unit 1)
         )
@@ -6848,7 +6849,7 @@
     (pin "3" (uuid 63abfc7c-7a8a-41b8-9a4c-5e3c1ed717e3))
     (pin "4" (uuid 2ebf846a-f438-42c2-b6a6-d44707d414e5))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "LED48") (unit 1)
         )
@@ -6876,7 +6877,7 @@
     (pin "3" (uuid e8c2925f-af37-4d30-a889-74a2ec6956de))
     (pin "4" (uuid 5f441108-04c5-4ca0-97d5-a08bc57d4fb2))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "LED49") (unit 1)
         )
@@ -6904,7 +6905,7 @@
     (pin "3" (uuid d5822abb-aeaf-46b6-8520-96c8bee4f33f))
     (pin "4" (uuid e43ec88e-14fe-4b5a-addc-90664ab1cbfe))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "LED50") (unit 1)
         )
@@ -6932,7 +6933,7 @@
     (pin "3" (uuid 80fa8954-ba7c-441a-88ce-7ebfef8c6382))
     (pin "4" (uuid d1086a49-d29c-4d6a-9224-8ecb354579bd))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "LED51") (unit 1)
         )
@@ -6960,7 +6961,7 @@
     (pin "3" (uuid 84c09758-2748-4b9c-b6dc-07533ea14058))
     (pin "4" (uuid bb994a5c-df04-4d16-9771-52f5c0ffdb4c))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "LED52") (unit 1)
         )
@@ -6988,7 +6989,7 @@
     (pin "3" (uuid 404df583-72c1-4a2d-a604-588437acbf40))
     (pin "4" (uuid b8f76431-11a7-4b75-9656-c195ddd8b806))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "LED53") (unit 1)
         )
@@ -7016,7 +7017,7 @@
     (pin "3" (uuid f1719469-0c1c-4a38-b147-5ec6d998f4fa))
     (pin "4" (uuid 725ad27e-e286-49e0-8bbe-7d2b703dd57e))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "LED54") (unit 1)
         )
@@ -7044,7 +7045,7 @@
     (pin "3" (uuid c23d56a2-5671-4bef-b2f5-ac62c21cc699))
     (pin "4" (uuid 3c435b69-c843-4ca7-9a99-de37d647d815))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "LED29") (unit 1)
         )
@@ -7072,7 +7073,7 @@
     (pin "3" (uuid 423609e1-98ff-432b-9101-541e7d7d22e6))
     (pin "4" (uuid ff54ccdd-019b-4090-96cc-acae7ee1c0b3))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "LED30") (unit 1)
         )
@@ -7100,7 +7101,7 @@
     (pin "3" (uuid ed0fd270-6d58-4da4-84ef-386795f12b14))
     (pin "4" (uuid 0590875d-bc2d-430e-b2d6-739efc2077db))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "LED28") (unit 1)
         )
@@ -7128,7 +7129,7 @@
     (pin "3" (uuid 9b6b5238-1f03-4fec-b515-efd0b2a32e5b))
     (pin "4" (uuid 1f267114-e411-4158-9be3-2f49800b2d67))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "LED32") (unit 1)
         )
@@ -7156,7 +7157,7 @@
     (pin "3" (uuid 70e20fea-742a-43a0-98fb-77a24a4916c3))
     (pin "4" (uuid 8c87642c-0316-4dcc-9940-82cec7f01eba))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "LED33") (unit 1)
         )
@@ -7184,7 +7185,7 @@
     (pin "3" (uuid 88f89959-c555-4549-b6d1-3f7301375ef5))
     (pin "4" (uuid 5de3a679-b281-4817-a13c-b5b286b61174))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "LED31") (unit 1)
         )
@@ -7209,7 +7210,7 @@
     )
     (pin "1" (uuid dfdd6e7a-5c96-4d73-aea6-2a544951af45))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "#PWR026") (unit 1)
         )
@@ -7234,7 +7235,7 @@
     )
     (pin "1" (uuid 792b4b79-40be-4b4d-a1e7-79b9327baae6))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "#PWR028") (unit 1)
         )
@@ -7259,7 +7260,7 @@
     )
     (pin "1" (uuid d1d84188-d996-4e10-b187-25ccb2e81855))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "#PWR012") (unit 1)
         )
@@ -7286,7 +7287,7 @@
     (pin "3" (uuid 2743fb61-ef02-4e08-a3fb-64c0cb17888f))
     (pin "2" (uuid d4c8ab3a-80bd-4290-89cc-1e7e5513aa20))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "JP2") (unit 1)
         )
@@ -7315,7 +7316,7 @@
     (pin "3" (uuid 6a63a34e-238f-488e-a9fd-d17f7d8a3c95))
     (pin "2" (uuid 5585521f-b682-49c6-ac4a-fb3aa71ae00c))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "J4") (unit 1)
         )
@@ -7342,7 +7343,7 @@
     (pin "3" (uuid 2a260c91-777b-4c86-8864-7a40d132418f))
     (pin "1" (uuid 62b22a40-d6c5-4191-85d9-6e9302f0d2b6))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "SW47") (unit 1)
         )
@@ -7367,7 +7368,7 @@
     )
     (pin "1" (uuid 5e25e7ed-10c0-4b19-b6e6-4773ced45193))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "#PWR019") (unit 1)
         )
@@ -7393,7 +7394,7 @@
     (pin "1" (uuid 8fedaa10-2e2c-4dea-b4c5-8409488c88ed))
     (pin "2" (uuid cb9da288-18bc-4e0e-99a9-2ef218880285))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "J3") (unit 1)
         )
@@ -7422,7 +7423,7 @@
     (pin "3" (uuid 450dc822-3351-45f6-a04a-cd30b33cf73e))
     (pin "2" (uuid d862baac-06b4-4339-a37f-ff0fab117b56))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "J1") (unit 1)
         )
@@ -7448,7 +7449,7 @@
     (pin "1" (uuid 7d984628-fef5-4404-b06a-7fefce21a11c))
     (pin "2" (uuid 0108c611-33fd-434a-aabc-b130d78e767e))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "R1") (unit 1)
         )
@@ -7473,7 +7474,7 @@
     )
     (pin "1" (uuid 51288712-115a-44c7-989f-8e3dac0d61aa))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "#PWR011") (unit 1)
         )
@@ -7499,7 +7500,7 @@
     (pin "1" (uuid abebe971-98e4-4800-983d-c24714fc2e3e))
     (pin "2" (uuid 6b262896-b12b-4778-9a0b-0dbd5ec6dc0a))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "R7") (unit 1)
         )
@@ -7525,7 +7526,7 @@
     (pin "1" (uuid 34a19769-ee94-4aa0-9dc3-16b5d9dfc9df))
     (pin "2" (uuid 6c5c4700-fc98-4b8a-aa25-2fe25dfa0ab2))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "J2") (unit 1)
         )
@@ -7551,7 +7552,7 @@
     (pin "1" (uuid df6eaf8f-db7b-4bcc-84cf-61d5844e30ea))
     (pin "2" (uuid e5fb9731-5da7-4a1c-8731-bd70ba13d65e))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "D43") (unit 1)
         )
@@ -7576,7 +7577,7 @@
     )
     (pin "1" (uuid 92e234b2-fa25-457b-ba6e-e31db547e4e8))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "#PWR03") (unit 1)
         )
@@ -7602,7 +7603,7 @@
     (pin "1" (uuid 0d65826c-5036-4ddc-98d9-b161015e8e24))
     (pin "2" (uuid aad7a9ff-126c-4f12-9997-315cb9c7412c))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "D49") (unit 1)
         )
@@ -7628,7 +7629,7 @@
     (pin "1" (uuid 9a086cfe-5ed9-4a09-83a1-a40bec50f7c2))
     (pin "2" (uuid fe1dfce4-f893-4b82-8170-5aa60b2f21d2))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "R3") (unit 1)
         )
@@ -7653,7 +7654,7 @@
     )
     (pin "1" (uuid be5ee72c-23d8-46e1-9878-6f15cc1b3857))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "#PWR018") (unit 1)
         )
@@ -7679,7 +7680,7 @@
     (pin "1" (uuid 490c52fe-7b6c-4cdb-83a7-3ac0f7ac98a8))
     (pin "2" (uuid 9fcea1a6-b693-444e-8600-1c75bd555e44))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "D50") (unit 1)
         )
@@ -7704,7 +7705,7 @@
     )
     (pin "1" (uuid 727924d0-ba90-40cc-b867-7dac04a305d9))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "#PWR017") (unit 1)
         )
@@ -7730,7 +7731,7 @@
     (pin "1" (uuid f841dec2-b657-4294-bc0a-8d606ea3a549))
     (pin "2" (uuid c4e45fd6-28e9-4b94-a55c-213b35cae184))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "R9") (unit 1)
         )
@@ -7756,7 +7757,7 @@
     (pin "1" (uuid 8b21679c-4578-4612-a435-14535dde911a))
     (pin "2" (uuid 46920d26-9595-49f8-bcf3-af1284eb5e5f))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "R6") (unit 1)
         )
@@ -7781,7 +7782,7 @@
     )
     (pin "1" (uuid 0d5106fd-f84e-42ba-b668-91def9a262f6))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "J5") (unit 1)
         )
@@ -7807,7 +7808,7 @@
     (pin "1" (uuid da9b5653-6c86-4594-9567-fc5c5669f9ae))
     (pin "2" (uuid 85bdf3c7-c63d-4363-b5af-b46bca94687b))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "D48") (unit 1)
         )
@@ -7833,7 +7834,7 @@
     (pin "1" (uuid 3e2458fe-1db3-4a81-a883-2dfe4fec7537))
     (pin "2" (uuid 6e0a96f4-859a-4c44-bd51-a0df52a398c5))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "R8") (unit 1)
         )
@@ -7879,7 +7880,7 @@
     (pin "12" (uuid 309a9282-c375-4e1a-bc80-ee86b941a4a1))
     (pin "13" (uuid 815f28d4-2163-46ea-9867-767535bf4d60))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "U2") (unit 1)
         )
@@ -7904,7 +7905,7 @@
     )
     (pin "1" (uuid 3e2b46d0-c016-4a16-aa4f-b08d09c67d6d))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "#PWR022") (unit 1)
         )
@@ -7930,7 +7931,7 @@
     (pin "1" (uuid ff33489f-5f55-4229-bbfb-68506a1962b5))
     (pin "2" (uuid 551eae73-fb58-4e63-99ab-0f75308f5cae))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "D44") (unit 1)
         )
@@ -7955,7 +7956,7 @@
     )
     (pin "1" (uuid 726a4230-5d5e-4256-b8a6-8fb1c9ade570))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "#PWR025") (unit 1)
         )
@@ -7982,7 +7983,7 @@
     (pin "3" (uuid 8ab42e2f-43a8-4535-b0fc-6d023bf55f64))
     (pin "1" (uuid 19a0d6dd-6eb0-4ecf-add3-822e6448d279))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "SW1") (unit 1)
         )
@@ -8028,7 +8029,7 @@
     (pin "12" (uuid 15902b2b-4658-4b94-bedb-46b02ac11d9c))
     (pin "13" (uuid d8757579-6f37-4f7b-b1eb-de92eb93abbe))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "U1") (unit 1)
         )
@@ -8053,7 +8054,7 @@
     )
     (pin "1" (uuid 62b45323-8c07-4104-97cc-a0d057f61f1c))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "J6") (unit 1)
         )
@@ -8080,7 +8081,7 @@
     (pin "3" (uuid 7b275276-bf38-491f-a400-e55c3d8ba237))
     (pin "1" (uuid 5c203ac5-3769-4fb7-8146-6a24c516670f))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "SW46") (unit 1)
         )
@@ -8105,7 +8106,7 @@
     )
     (pin "1" (uuid c47d567b-0358-40ae-816b-989dfd249411))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "#PWR09") (unit 1)
         )
@@ -8130,7 +8131,7 @@
     )
     (pin "1" (uuid 450a336a-2a62-44a7-820c-931ce977d87e))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "#PWR07") (unit 1)
         )
@@ -8155,7 +8156,7 @@
     )
     (pin "1" (uuid 1c782c5f-d257-4369-9db4-1a74a8e1856a))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "#PWR010") (unit 1)
         )
@@ -8182,7 +8183,7 @@
     (pin "3" (uuid a7892a14-f6de-4ccc-8bd9-57a4fbfcea6a))
     (pin "1" (uuid b51e2cdc-10ea-4a93-8402-b85940ff1351))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "SW22") (unit 1)
         )
@@ -8207,7 +8208,7 @@
     )
     (pin "1" (uuid 475a7788-c4b7-4b2c-b800-cbb9f4fa6315))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "J7") (unit 1)
         )
@@ -8233,7 +8234,7 @@
     (pin "1" (uuid f7bb8a3c-4aa3-42fd-9da3-85ca87f79f6c))
     (pin "2" (uuid 714830f7-be05-4ebd-8443-cba39345ce13))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "R10") (unit 1)
         )
@@ -8258,7 +8259,7 @@
     )
     (pin "1" (uuid 7aefafab-7b63-49bf-8eed-c75b398287d9))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "J8") (unit 1)
         )
@@ -8284,7 +8285,7 @@
     (pin "1" (uuid ee0b30bf-138d-4bf9-83b2-eec5bde37da2))
     (pin "2" (uuid ed272d79-3b60-48e5-9311-8e010c5a48bc))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "D46") (unit 1)
         )
@@ -8310,7 +8311,7 @@
     (pin "1" (uuid ccccefb9-fd31-48f0-86ec-64d57c2f82d9))
     (pin "2" (uuid c5488e5b-2e6f-40af-a681-c4b25680a310))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "D22") (unit 1)
         )
@@ -8335,7 +8336,7 @@
     )
     (pin "1" (uuid 8795e018-1687-4d46-bfeb-33aaf0366bec))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "#PWR021") (unit 1)
         )
@@ -8361,7 +8362,7 @@
     (pin "1" (uuid 4a1ec442-1a49-4881-ada9-2d4f12ead2fd))
     (pin "2" (uuid 6ef37132-58aa-46e7-9cf2-17d9c73f8256))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "R4") (unit 1)
         )
@@ -8386,7 +8387,7 @@
     )
     (pin "1" (uuid 0bc7f535-305e-4c53-9e10-e066b231b433))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "#PWR027") (unit 1)
         )
@@ -8412,7 +8413,7 @@
     (pin "1" (uuid a8793329-c407-470f-ac41-46614bca1a07))
     (pin "2" (uuid 330f025f-6d9e-4317-971f-d2de230d1400))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "D45") (unit 1)
         )
@@ -8439,7 +8440,7 @@
     (pin "3" (uuid 56117927-8e7a-4f16-b954-411b3d197a12))
     (pin "2" (uuid 6f7cef82-b735-4034-a214-66959c5dd31a))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "JP1") (unit 1)
         )
@@ -8465,7 +8466,7 @@
     (pin "1" (uuid 51f76407-d7ac-4be8-9026-9c56400f6e2b))
     (pin "2" (uuid 79f95708-5c6d-4b17-a981-fd271b7da662))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "D47") (unit 1)
         )
@@ -8491,7 +8492,7 @@
     (pin "1" (uuid aec2e61d-d8e5-4936-82ed-a7ccb8fa983a))
     (pin "2" (uuid 0a52a816-3339-4f98-8b94-78a3032d9f85))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "R2") (unit 1)
         )
@@ -8517,7 +8518,7 @@
     (pin "1" (uuid b80b0419-991c-4956-9279-ea96b2dc8899))
     (pin "2" (uuid d45e9ffe-3701-4abd-8def-825d5d043e75))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "D1") (unit 1)
         )
@@ -8543,7 +8544,7 @@
     (pin "1" (uuid 3deba8be-7bca-4f5b-be04-32f06a54a5d7))
     (pin "2" (uuid 8c588017-79cc-4034-b569-87fc415e995e))
     (instances
-      (project "corne-cherry"
+      (project "PandaWings"
         (path "/4cc5d416-57f5-4147-8183-e03ae6b1198a"
           (reference "R5") (unit 1)
         )

@@ -34,3 +34,6 @@ gbr/
 
 # Backup files (exported from Pcbnew)
 *-backups/
+
+# working files
+*.lck
