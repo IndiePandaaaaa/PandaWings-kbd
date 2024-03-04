@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="136.06462mm"
+   height="95.012863mm"
+   viewBox="0 0 136.06462 95.012863"
+   version="1.1"
+   id="svg18743"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   sodipodi:docname="PandaWings-Edge_Cuts_half_square.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview18745"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:zoom="7.2466938"
+     inkscape:cx="134.61311"
+     inkscape:cy="203.95508"
+     inkscape:window-width="2560"
+     inkscape:window-height="1532"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs18740" />
+  <g
+     inkscape:label="Ebene 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(134.9164,-96.65636)">
+    <rect
+       style="fill:#ffffff;stroke:#000000;stroke-width:0.264583"
+       id="rect30"
+       width="202.81612"
+       height="170.18375"
+       x="-163.90436"
+       y="67.323738" />
+    <g
+       id="g18632"
+       transform="matrix(-1,0,0,1,-139.67258,96.624072)">
+      <path
+         style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m -140.68851,69.32263 14.77071,25.541615 16.48693,-9.564761 37.615945,-5.051314 10.726452,-14.783591 h 38.4 v -8.986291 l 17.7999998,-3.02e-4 V 16.964579 H -22.588473 V 7.1645793 h -20 v -4.7 h -18.999558 l -4.42e-4,-2.3 h -20.5 v 2.3 h -19.099997 v 2.5 h -19 v 2.3 h -20.5 z"
+         id="path7575-3"
+         sodipodi:nodetypes="ccccccccccccccccccccccc" />
+    </g>
+  </g>
+</svg>
