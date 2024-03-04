@@ -2,10 +2,73 @@
 
 TOLERANCE = .15;
 THICKNESS = 2.5;
+$fn = 75;
 
-KEYBOARD_COORDS = [
 
+// CASE PARTS
+DONGLE_CASE = false;
+KEYBOARD_CASE = true;
+SWITCH_PLATE = true;
+WRIST_REST = true;
+LAPTOP_STANDOFFS = true;
+
+
+CASE = [
+  [17.9, 65.4],
+  [56.3, 65.4],
+  [67.0, 80.2],
+  [104.6, 85.2],
+  [121.1, 94.8],
+  [135.9, 69.2],
+  [135.9, 7.2],
+  [115.4, 7.2],
+  [115.4, 4.9],
+  [96.4, 4.9],
+  [96.4, 2.4],
+  [77.3, 2.4],
+  [77.3, 0.1],
+  [56.8, 0.1],
+  [56.8, 2.4],
+  [37.8, 2.4],
+  [37.8, 7.1],
+  [17.8, 7.1],
+  [17.8, 16.9],
+  [0.1, 16.9],
+  [0.1, 56.4],
+  [17.9, 56.4],
 ];
+
+PCB_SIZE = [134, 91.6];
+
+module mounting_holes(thickness, diameter = 4.7, screws = false) {
+  // M3 = 1.7, M4 = 2.3
+  cone_height_m3 = 1.7;
+  cone_height_m4 = 2.3;
+
+  MOUNTING_HOLES = [
+    [18.9, 26.3],
+    [18.9, 45.3],
+    [62.0, 62.5],
+    [94.9, 22.8],
+    [108.6, 70.1],
+  ];
+
+  translate([PCB_SIZE[0], PCB_SIZE[1], 0]) mirror([0, 1, 0]) mirror([1, 0, 0]) union() {
+    for (i = MOUNTING_HOLES) {
+      if (screws)
+        translate([i[0], i[1], 0]) {
+          if (diameter == 3)
+            translate([0, 0, thickness - cone_height_m3])
+              cylinder(d1 = diameter, d2 = diameter * 2 + 0.4, h = cone_height_m3);
+          if (diameter == 4)
+            translate([0, 0, thickness - cone_height_m4])
+              cylinder(d1 = diameter, d2 = diameter * 2 + 0.4, h = cone_height_m4);
+        }
+
+      translate([i[0], i[1], 0]) cylinder(d = diameter, h = thickness);
+    }
+  }
+}
 
 module dongle_case(thickness = 2, tolerance = .2) {
   adapter_width = 14.5; // Adafruit P5329
@@ -71,4 +134,23 @@ module dongle_case(thickness = 2, tolerance = .2) {
   }
 }
 
-dongle_case();
+if (DONGLE_CASE)
+  rotate([0, 0, -180]) dongle_case();
+
+module switch_plate(thickness = 2.5) {
+  max_thickness = 4;
+  mx_plate_thickness = 1.5;
+
+  difference() {
+    linear_extrude(max_thickness)
+      import("../PandaWings/pcb/svg/PandaWings-Edge_Cuts_half_switch_plate.svg", dpi = 300);
+    translate([0, 0, -.1]) linear_extrude(max_thickness - mx_plate_thickness + .1)
+      import("../PandaWings/pcb/svg/PandaWings-Edge_Cuts_half_switches_offset.svg", dpi = 300);
+    translate([0, 0, max_thickness - mx_plate_thickness - .1]) linear_extrude(mx_plate_thickness + .2)
+      import("../PandaWings/pcb/svg/PandaWings-Edge_Cuts_half_switches.svg", dpi = 300);
+    translate([0, 0, -.1]) mounting_holes(max_thickness + .2, 4, true);
+  }
+}
+
+if (SWITCH_PLATE)
+  switch_plate();
