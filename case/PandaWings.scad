@@ -5,13 +5,19 @@ THICKNESS = 2.5;
 $fn = 75;
 
 
-// CASE PARTS
+// DONGLE
 DONGLE_CASE = false;
+
+// CASE
 KEYBOARD_CASE = true;
-SWITCH_PLATE = true;
+SWITCH_PLATE = false;
+
+// CASE ADDONS
 WRIST_REST = true;
 LAPTOP_STANDOFFS = true;
 
+
+BATTERY_SIZE = [40.8, 29, 4.7];  // Battery 600mAh (Jauch LP503040JH)
 
 CASE = [
   [17.9, 65.4],
@@ -38,7 +44,8 @@ CASE = [
   [17.9, 56.4],
 ];
 
-PCB_SIZE = [134, 91.6];
+PCB_SIZE = [133.8, 92.6];
+CASE_SIZE = [136, 95];
 
 module mounting_holes(thickness, diameter = 4.7, screws = false) {
   // M3 = 1.7, M4 = 2.3
@@ -134,23 +141,27 @@ module dongle_case(thickness = 2, tolerance = .2) {
   }
 }
 
-if (DONGLE_CASE)
-  rotate([0, 0, -180]) dongle_case();
-
 module switch_plate(thickness = 2.5) {
-  max_thickness = 4;
+  max_thickness = 4.7;
   mx_plate_thickness = 1.5;
 
-  difference() {
+  translate([5, 5, 0]) difference() {
     linear_extrude(max_thickness)
-      import("../PandaWings/pcb/svg/PandaWings-Edge_Cuts_half_switch_plate.svg", dpi = 300);
+      import("./svg/PandaWings_contour_half_switch_plate.svg", dpi = 300);
     translate([0, 0, -.1]) linear_extrude(max_thickness - mx_plate_thickness + .1)
-      import("../PandaWings/pcb/svg/PandaWings-Edge_Cuts_half_switches_offset.svg", dpi = 300);
+      import("./svg/PandaWings_contour_half_switch_plate_outer_cutout.svg", dpi = 300);
     translate([0, 0, max_thickness - mx_plate_thickness - .1]) linear_extrude(mx_plate_thickness + .2)
-      import("../PandaWings/pcb/svg/PandaWings-Edge_Cuts_half_switches.svg", dpi = 300);
-    translate([0, 0, -.1]) mounting_holes(max_thickness + .2, 4, true);
+      import("./svg/PandaWings_contour_half_switch_plate_inner_cutout.svg", dpi = 300);
+    translate([0, 0, -.1]) mounting_holes(max_thickness + .2, 3, true);
   }
 }
 
-if (SWITCH_PLATE)
-  switch_plate();
+module keyboard_case(thickness = 2.5) {
+  linear_extrude(thickness) import("./svg/PandaWings_contour_case.svg", dpi = 300); 
+}
+
+if (DONGLE_CASE) translate([0, 120, 0]) dongle_case();
+
+if (SWITCH_PLATE) switch_plate();
+
+if (KEYBOARD_CASE) keyboard_case();
