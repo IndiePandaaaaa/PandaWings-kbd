@@ -4,10 +4,10 @@
 <svg
    width="136.06462mm"
    height="95.012863mm"
-   viewBox="0 0 136.06462 95.012863"
+   viewBox="0 0 136.06462 95.012861"
    version="1.1"
    id="svg18743"
-   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
    sodipodi:docname="PandaWings-Edge_Cuts_half_square.svg"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
@@ -27,15 +27,17 @@
      fit-margin-left="0"
      fit-margin-right="0"
      fit-margin-bottom="0"
-     inkscape:zoom="7.2466938"
-     inkscape:cx="134.61311"
-     inkscape:cy="203.95508"
-     inkscape:window-width="2560"
-     inkscape:window-height="1532"
-     inkscape:window-x="0"
-     inkscape:window-y="0"
+     inkscape:zoom="1.8116735"
+     inkscape:cx="182.98"
+     inkscape:cy="287.85541"
+     inkscape:window-width="3840"
+     inkscape:window-height="2066"
+     inkscape:window-x="-11"
+     inkscape:window-y="-11"
      inkscape:window-maximized="1"
-     inkscape:current-layer="layer1" />
+     inkscape:current-layer="layer1"
+     inkscape:showpageshadow="2"
+     inkscape:deskcolor="#d1d1d1" />
   <defs
      id="defs18740" />
   <g
@@ -43,13 +45,6 @@
      inkscape:groupmode="layer"
      id="layer1"
      transform="translate(134.9164,-96.65636)">
-    <rect
-       style="fill:#ffffff;stroke:#000000;stroke-width:0.264583"
-       id="rect30"
-       width="202.81612"
-       height="170.18375"
-       x="-163.90436"
-       y="67.323738" />
     <g
        id="g18632"
        transform="matrix(-1,0,0,1,-139.67258,96.624072)">
