@@ -19,38 +19,14 @@ LAPTOP_STANDOFFS = true;
 
 BATTERY_SIZE = [40.8, 29, 4.7];  // Battery 600mAh (Jauch LP503040JH)
 
-CASE = [
-  [17.9, 65.4],
-  [56.3, 65.4],
-  [67.0, 80.2],
-  [104.6, 85.2],
-  [121.1, 94.8],
-  [135.9, 69.2],
-  [135.9, 7.2],
-  [115.4, 7.2],
-  [115.4, 4.9],
-  [96.4, 4.9],
-  [96.4, 2.4],
-  [77.3, 2.4],
-  [77.3, 0.1],
-  [56.8, 0.1],
-  [56.8, 2.4],
-  [37.8, 2.4],
-  [37.8, 7.1],
-  [17.8, 7.1],
-  [17.8, 16.9],
-  [0.1, 16.9],
-  [0.1, 56.4],
-  [17.9, 56.4],
-];
-
 PCB_SIZE = [133.8, 92.6];
-CASE_SIZE = [136, 95];
 
-module mounting_holes(thickness, diameter = 4.7, screws = false) {
-  // M3 = 1.7, M4 = 2.3
+module mounting_holes(thickness, diameter = 4.7, screws = false, nuts = false) {
   cone_height_m3 = 1.7;
   cone_height_m4 = 2.3;
+
+  nut_m3 = [6.1 + .2, 2.4 + .2];
+  nut_m4 = [7.7 + .2, 3.2 + .2];
 
   MOUNTING_HOLES = [
     [18.9, 26.3],
@@ -62,17 +38,20 @@ module mounting_holes(thickness, diameter = 4.7, screws = false) {
 
   translate([PCB_SIZE[0], PCB_SIZE[1], 0]) mirror([0, 1, 0]) mirror([1, 0, 0]) union() {
     for (i = MOUNTING_HOLES) {
-      if (screws)
-        translate([i[0], i[1], 0]) {
-          if (diameter == 3)
-            translate([0, 0, thickness - cone_height_m3])
-              cylinder(d1 = diameter, d2 = diameter * 2 + 0.4, h = cone_height_m3);
-          if (diameter == 4)
-            translate([0, 0, thickness - cone_height_m4])
-              cylinder(d1 = diameter, d2 = diameter * 2 + 0.4, h = cone_height_m4);
-        }
+      translate([i[0], i[1], 0]) {
+        if (screws && !nuts && diameter == 3)
+          translate([0, 0, thickness - cone_height_m3])
+            cylinder(d1 = diameter, d2 = diameter * 2 + 0.4, h = cone_height_m3);
+        else if (screws && !nuts && diameter == 4)
+          translate([0, 0, thickness - cone_height_m4])
+            cylinder(d1 = diameter, d2 = diameter * 2 + 0.4, h = cone_height_m4); 
+        else if (!screws && nuts && diameter == 3)
+          cylinder(d = nut_m3[0], h = nut_m3[1] > thickness ? nut_m3[1] : thickness, $fn = 6);
+        else if (!screws && nuts && diameter == 4)
+          cylinder(d = nut_m4[0], h = nut_m4[1] > thickness ? nut_m4[1] : thickness, $fn = 6);
+      }
 
-      translate([i[0], i[1], 0]) cylinder(d = diameter, h = thickness);
+      if (!nuts) translate([i[0], i[1], 0]) cylinder(d = diameter, h = thickness);
     }
   }
 }
@@ -152,12 +131,37 @@ module switch_plate(thickness = 2.5) {
       import("./svg/PandaWings_contour_half_switch_plate_outer_cutout.svg", dpi = 300);
     translate([0, 0, max_thickness - mx_plate_thickness - .1]) linear_extrude(mx_plate_thickness + .2)
       import("./svg/PandaWings_contour_half_switch_plate_inner_cutout.svg", dpi = 300);
-    translate([0, 0, -.1]) mounting_holes(max_thickness + .2, 3, true);
+    translate([0, 0, -.1]) mounting_holes(max_thickness + .2, 3, screws = true); // 3 mm for M3
   }
 }
 
-module keyboard_case(thickness = 2.5) {
-  linear_extrude(thickness) import("./svg/PandaWings_contour_case.svg", dpi = 300); 
+module keyboard_case(thickness = 2.5, min_thickness = 1.5, pcb_thickness = 1.6) {
+  battery_connector_height = 5;
+  // heights
+  above_pcb = 7;
+  below_pcb = WRIST_REST ? min_thickness + BATTERY_SIZE[2] + 2 : thickness + battery_connector_height;
+  case_height = below_pcb + pcb_thickness + above_pcb;
+
+  translate([10, 0, 0]) difference() {
+      union() {
+        difference() {
+          linear_extrude(case_height)
+            import("./svg/PandaWings_contour_case.svg", dpi = 300); 
+          translate([0, 0, thickness]) linear_extrude(case_height - thickness + .1)
+            import("./svg/PandaWings_contour_half_pcb.svg", dpi = 300);
+          translate([0, 0, -.1]) linear_extrude(thickness + .2)
+            import("./svg/PandaWings_contour_case_cutout.svg", dpi = 300);
+          translate([0, 0, -.1]) mounting_holes(thickness + .2, 3, screws = false, nuts = true);
+        }
+        difference() {
+          translate([0, 0, thickness]) union() {
+            mounting_holes(below_pcb, 4.5, screws = false);
+            mounting_holes(below_pcb - 2, 10, screws = false);
+        }
+      }
+    }
+    translate([0, 0, thickness - .1]) mounting_holes(below_pcb + .2, 3, screws = false);
+  }
 }
 
 if (DONGLE_CASE) translate([0, 120, 0]) dongle_case();
