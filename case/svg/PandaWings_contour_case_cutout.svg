@@ -8,7 +8,7 @@
    version="1.1"
    id="svg18743"
    inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
-   sodipodi:docname="PandaWings-Edge_Cuts_half_square_inner_cutout.svg"
+   sodipodi:docname="PandaWings_contour_case_cutout.svg"
    xml:space="preserve"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
@@ -28,8 +28,8 @@
      fit-margin-right="0"
      fit-margin-bottom="0"
      inkscape:zoom="2.5620932"
-     inkscape:cx="227.74347"
-     inkscape:cy="203.54451"
+     inkscape:cx="227.54832"
+     inkscape:cy="203.93481"
      inkscape:window-width="3840"
      inkscape:window-height="2066"
      inkscape:window-x="-11"
@@ -43,7 +43,8 @@
      inkscape:groupmode="layer"
      id="layer1"
      transform="translate(74.650739,-132.79013)"><g
-       id="g1"><g
+       id="g1"
+       transform="matrix(-1,0,0,1,-23.259877,0)"><g
          id="g4"
          transform="rotate(11.721503,80.098839,-9.2810211)"><path
            sodipodi:type="star"
