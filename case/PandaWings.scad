@@ -148,19 +148,21 @@ module switch_plate(thickness = 2.5) {
 }
 
 module keyboard_case(thickness = 2.5, min_thickness = 1.5, pcb_thickness = 1.6) {
-  module tenting() {
-    locations = [];
-
-    // structure to add tenting nuts
-  }
-
   // heights
   battery_connector_height = 5;
-  above_pcb = 7;
+  above_pcb = 3;
   below_pcb = WRIST_REST ? min_thickness + BATTERY_SIZE[2] + 2 : thickness + battery_connector_height;
   case_height = below_pcb + pcb_thickness + above_pcb;
+  
+  tenting_locations = [
+    [6, 85], 
+    [17.9, 6.3],
+    [116.25, 34.5],
+    [116.25, 85],
+  ];
 
-  translate([10, 0, 0]) difference() {
+  translate([10, 0, 0]) { 
+    difference() {
       union() {
         difference() {
           linear_extrude(case_height)
@@ -175,11 +177,25 @@ module keyboard_case(thickness = 2.5, min_thickness = 1.5, pcb_thickness = 1.6) 
           translate([0, 0, thickness]) union() {
             mounting(below_pcb, 4.5, screws = true);
             mounting(below_pcb - 2, 10, screws = true);
+          }
+        }
+        translate([0, 0, thickness]) mounting(below_pcb, diameter = 4.5, standoffs = true);
+        
+        for (i = tenting_locations) {
+          translate([i[0], i[1], thickness -.1]) {
+            difference() {
+              cylinder(d = 10, h = 3);
+              nut_cutout("M4", 3);
+            } 
+          }
         }
       }
-      translate([0, 0, thickness]) mounting(below_pcb, diameter = 4.5, standoffs = true);
+
+      for (i = tenting_locations) translate([i[0], i[1], -.1]) cylinder(d = 4.2, h = below_pcb + .1);
+      translate([0, 0, thickness - .1]) mounting(below_pcb + .2, 3, screws = true);
+      translate([4.5, 88, below_pcb + 2.5]) cube([13.5, 5, 8]);
+      translate([0, 32, below_pcb]) cube([5, 24, 5]);
     }
-    translate([0, 0, thickness - .1]) mounting(below_pcb + .2, 3, screws = true);
   }
 }
 
