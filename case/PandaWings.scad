@@ -17,7 +17,7 @@ WRIST_REST = true;
 LAPTOP_STANDOFFS = true;
 
 
-BATTERY_SIZE = [40.8, 29, 4.7];  // Battery 600mAh (Jauch LP503040JH)
+BATTERY_SIZE = [41.2, 29.5, 4.8];  // Battery 600mAh (Jauch LP503040JH)
 
 PCB_SIZE = [133.8, 92.6];
 
@@ -143,20 +143,22 @@ module switch_plate(thickness = 2.5) {
       import("./svg/PandaWings_contour_half_switch_plate_outer_cutout.svg", dpi = 300);
     translate([0, 0, max_thickness - mx_plate_thickness - .1]) linear_extrude(mx_plate_thickness + .2)
       import("./svg/PandaWings_contour_half_switch_plate_inner_cutout.svg", dpi = 300);
-    translate([0, 0, -.1]) mounting(max_thickness + .2, 3, countersunk = true); // 3 mm for M3
+    translate([0, 0, -.1]) mounting(max_thickness + .2, 3.2, countersunk = true); // 3 mm for M3
   }
 }
 
-module keyboard_case(thickness = 2.5, min_thickness = 1.5, pcb_thickness = 1.6) {
+module keyboard_case(wrist_rest = true, thickness = 2.5, min_thickness = 1.5, pcb_thickness = 1.6) {
   // heights
   battery_connector_height = 5;
   above_pcb = 3;
-  below_pcb = WRIST_REST ? min_thickness + BATTERY_SIZE[2] + 2 : thickness + battery_connector_height;
+  below_pcb = wrist_rest ? thickness + battery_connector_height : min_thickness + BATTERY_SIZE[2] + 2;
   case_height = below_pcb + pcb_thickness + above_pcb;
+
+  mounting_offset = [2.8, 6.7 - 2.2];
   
   tenting_locations = [
     [6, 85], 
-    [17.9, 6.3],
+    [32, 14],
     [116.25, 34.5],
     [116.25, 85],
   ];
@@ -171,15 +173,16 @@ module keyboard_case(thickness = 2.5, min_thickness = 1.5, pcb_thickness = 1.6) 
             import("./svg/PandaWings_contour_half_pcb.svg", dpi = 300);
           translate([0, 0, -.1]) linear_extrude(thickness + .2)
             import("./svg/PandaWings_contour_case_cutout.svg", dpi = 300);
-          translate([0, 0, -.1]) mounting(thickness + .2, 3, nuts = true);
+          translate([mounting_offset[0], mounting_offset[1], -.1]) mounting(thickness + .2, 3, nuts = true);
         }
         difference() {
-          translate([0, 0, thickness]) union() {
+          translate([mounting_offset[0], mounting_offset[1], thickness]) union() {
             mounting(below_pcb, 4.5, screws = true);
             mounting(below_pcb - 2, 10, screws = true);
           }
         }
-        translate([0, 0, thickness]) mounting(below_pcb, diameter = 4.5, standoffs = true);
+        translate([mounting_offset[0], mounting_offset[1], thickness]) 
+          mounting(below_pcb, diameter = 4.5, standoffs = true);
         
         for (i = tenting_locations) {
           translate([i[0], i[1], thickness -.1]) {
@@ -192,9 +195,18 @@ module keyboard_case(thickness = 2.5, min_thickness = 1.5, pcb_thickness = 1.6) 
       }
 
       for (i = tenting_locations) translate([i[0], i[1], -.1]) cylinder(d = 4.2, h = below_pcb + .1);
-      translate([0, 0, thickness - .1]) mounting(below_pcb + .2, 3, screws = true);
-      translate([4.5, 88, below_pcb + 2.5]) cube([13.5, 5, 8]);
-      translate([0, 32, below_pcb]) cube([5, 24, 5]);
+      translate([mounting_offset[0], mounting_offset[1], thickness - .1]) 
+        mounting(below_pcb + .2, 3.2, screws = true);
+
+      // battery
+      if (!wrist_rest)
+        translate([20, 38, min_thickness + .15]) cube(BATTERY_SIZE);
+
+      // USB port
+      translate([7.5, 88, below_pcb + 2.5]) cube([9, 5, 8]);
+
+      // side switches
+      translate([0, 34, below_pcb]) cube([5, 24, 5]);
     }
   }
 }
@@ -204,4 +216,4 @@ if (DONGLE_CASE) translate([0, 120, 0]) dongle_case();
 
 if (SWITCH_PLATE) switch_plate();
 
-if (KEYBOARD_CASE) keyboard_case();
+if (KEYBOARD_CASE) keyboard_case(wrist_rest = false);
