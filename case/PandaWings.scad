@@ -13,8 +13,8 @@ KEYBOARD_CASE = true;
 SWITCH_PLATE = false;
 
 // CASE ADDONS
-WRIST_REST = true;
-LAPTOP_STANDOFFS = true;
+WRIST_REST = false;
+LAPTOP_STANDOFFS = false;
 
 
 BATTERY_SIZE = [41.2, 29.5, 4.8];  // Battery 600mAh (Jauch LP503040JH)
@@ -49,10 +49,10 @@ module mounting(thickness, diameter = 4.7, screws = false, countersunk = false, 
   translate([PCB_SIZE[0], PCB_SIZE[1], 0]) mirror([0, 1, 0]) mirror([1, 0, 0]) union() {
     for (i = MOUNTING_HOLES) {
       translate([i[0], i[1], 0]) {
-        if (countersunk && !nuts && diameter == 3)
+        if (countersunk && !nuts && diameter >= 3 && diameter <= 3.5)
           translate([0, 0, thickness - cone_height_m3])
             cylinder(d1 = diameter, d2 = diameter * 2 + 0.4, h = cone_height_m3);
-        else if (countersunk && !nuts && diameter == 4)
+        else if (countersunk && !nuts && diameter >= 4 && diameter <= 4.5)
           translate([0, 0, thickness - cone_height_m4])
             cylinder(d1 = diameter, d2 = diameter * 2 + 0.4, h = cone_height_m4); 
         else if (!countersunk && nuts && diameter == 3)
@@ -136,14 +136,14 @@ module switch_plate(thickness = 2.5) {
   max_thickness = 4.7;
   mx_plate_thickness = 1.5;
 
-  translate([5, 5, 0]) difference() {
+  translate([13, 3.2, 14]) difference() {
     linear_extrude(max_thickness)
       import("./svg/PandaWings_contour_half_switch_plate.svg", dpi = 300);
     translate([0, 0, -.1]) linear_extrude(max_thickness - mx_plate_thickness + .1)
       import("./svg/PandaWings_contour_half_switch_plate_outer_cutout.svg", dpi = 300);
     translate([0, 0, max_thickness - mx_plate_thickness - .1]) linear_extrude(mx_plate_thickness + .2)
       import("./svg/PandaWings_contour_half_switch_plate_inner_cutout.svg", dpi = 300);
-    translate([0, 0, -.1]) mounting(max_thickness + .2, 3.2, countersunk = true); // 3 mm for M3
+    translate([0, 0, -.1]) mounting(max_thickness + .2, 3.2, screws = true, countersunk = true); // 3.2 mm for M3
   }
 }
 
@@ -154,7 +154,7 @@ module keyboard_case(wrist_rest = true, thickness = 2.5, min_thickness = 1.5, pc
   below_pcb = wrist_rest ? thickness + battery_connector_height : min_thickness + BATTERY_SIZE[2] + 2;
   case_height = below_pcb + pcb_thickness + above_pcb;
 
-  mounting_offset = [2.8, 6.7 - 2.2];
+  mounting_offset = [2.95, 3.2];
   
   tenting_locations = [
     [6, 85], 
