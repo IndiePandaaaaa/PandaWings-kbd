@@ -207,6 +207,22 @@ module keyboard_case(wrist_rest = true, thickness = 2.5, min_thickness = 1.5, pc
 
       // side switches
       translate([0, 34, below_pcb]) cube([5, 24, 5]);
+
+      // wrist rest mounting
+      translate([82, 10, 0]) {
+        wr_loc = [ [0, 0], [40, 9.5] ];
+        size = [9, 20, thickness + .2];
+
+        for (i = wr_loc) {
+          translate([i[0], i[1], -.1]) union () {
+            cube([size[0], size[1] - size[0] / 2, size[2]]);
+            translate([size[0] / 2, size[1] - size[0] / 2, 0]) {
+              cylinder(d = size[0], h = size[2]);
+              cylinder(d = 2.95, h = 12);
+            }
+          }
+        }
+      }
     }
   }
 }
