@@ -8,7 +8,7 @@
    version="1.1"
    id="svg18743"
    inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
-   sodipodi:docname="PandaWings_contour_case_wrist_rest.svg"
+   sodipodi:docname="PandaWings_contour_wrist_rest.svg"
    xml:space="preserve"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
@@ -44,14 +44,6 @@
      inkscape:groupmode="layer"
      id="layer1"
      transform="translate(48.049073,-239.73514)"><path
-       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m -85.967848,212.83463 14.77071,25.54162 16.48693,-9.56476 37.615945,-5.05132 10.7264525,-14.78359 H 32.032192 v -8.98629 l 17.800005,-3e-4 V 160.47658 H 32.132192 v -9.8 H 12.132191 v -4.7 H -6.8673685 l -4.42e-4,-2.3 H -27.36781 v 2.3 h -19.099997 v 2.5 h -19.000001 v 2.3 h -20.5 z"
-       id="path7575-3"
-       sodipodi:nodetypes="ccccccccccccccccccccccc" /><path
-       style="fill:none;stroke:#000000;stroke-width:0.264999;stroke-dasharray:none"
-       d="M 51.520849,160.92492 C 50.010693,149.72924 21.497874,146.05037 6.660982,143.97203 c -14.836892,-2.07834 -65.671184,-1.57696 -69.691343,0.32068 -4.020159,1.89764 -3.103415,4.99223 -4.065625,5.00311 0,0 -10.756692,0.0351 -20.834072,0.11018 -0.14642,3.32432 -0.549002,59.49178 0.516342,63.65612 1.065344,4.16434 11.872178,26.16897 15.864708,26.34779 5.235307,0.23448 123.147648,-26.67897 123.069857,-40.55406 z"
-       id="path1"
-       sodipodi:nodetypes="czzcczscc" /><path
        style="fill:none;fill-opacity:0.81157;stroke:#000000;stroke-width:0.257753"
        d="m 35.534253,241.70691 c -16.887452,-8.80609 -79.39496,16.40048 -82.71908,24.73967 -4.73193,11.87094 14.271611,30.94892 31.174368,37.57762 16.902757,6.6287 44.297825,3.53639 55.303803,-16.17375 C 50.29932,268.14031 52.421706,250.513 35.534253,241.70691 Z"
        id="path2"
