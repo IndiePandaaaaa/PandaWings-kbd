@@ -14,7 +14,7 @@ SWITCH_PLATE = true;
 
 // CASE ADDONS
 WRIST_REST = true;
-LAPTOP_STANDOFFS = false;
+LAPTOP_STANDOFFS = true;
 TENTING_CAPS = true;
 
 
@@ -263,13 +263,21 @@ module tenting_caps(diameter = 12) {
   }
 }
 
+union() {
+  if (DONGLE_CASE) translate([-11, 0, 0]) dongle_case();
 
-if (DONGLE_CASE) translate([0, 120, 0]) dongle_case();
+  for (i = [0:1]) {
+    mirror([i, 0, 0]) {
+      translate([30, 0, 0]) {
+        if (KEYBOARD_CASE) keyboard_case(wrist_rest = WRIST_REST);
 
-if (SWITCH_PLATE) switch_plate();
+        if (SWITCH_PLATE) switch_plate();
 
-if (KEYBOARD_CASE) keyboard_case(wrist_rest = WRIST_REST);
+        if (WRIST_REST) wrist_rest();
 
-if (WRIST_REST) wrist_rest();
+        if (TENTING_CAPS) translate([10, -10, 0]) tenting_caps();
+      }
+    }
+  }
+}
 
-if (TENTING_CAPS) translate([10, -10, 0]) tenting_caps();
