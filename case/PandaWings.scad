@@ -6,15 +6,16 @@ $fn = 75;
 
 
 // DONGLE
-DONGLE_CASE = false;
+DONGLE_CASE = true;
 
 // CASE
 KEYBOARD_CASE = true;
-SWITCH_PLATE = false;
+SWITCH_PLATE = true;
 
 // CASE ADDONS
-WRIST_REST = false;
+WRIST_REST = true;
 LAPTOP_STANDOFFS = false;
+TENTING_CAPS = true;
 
 
 BATTERY_SIZE = [41.2, 29.5, 4.8];  // Battery 600mAh (Jauch LP503040JH)
@@ -26,10 +27,11 @@ module nut_cutout(standard = "M3", thickness = 0, tolerance = .1) {
   nut_m3 = [6.1, 2.4];
   nut_m4 = [7.7, 3.2];
   
-  if (standard == "M3" || standard == "m3" || standard == "3" || standard == 3)
-    cylinder(d = nut_m3[0] + tolerance, h = nut_m3[1] > thickness ? nut_m3[1] + tolerance : thickness, $fn = 6);
-  else if (standard == "M4" || standard == "m4" || standard == "4" || standard == "4")
-    cylinder(d = nut_m4[0] + tolerance, h = nut_m4[1] > thickness ? nut_m4[1] + tolerance : thickness, $fn = 6);
+  rotate([0, 0, 30])
+    if (standard == "M3" || standard == "m3" || standard == "3" || standard == 3)
+      cylinder(d = nut_m3[0] + tolerance, h = nut_m3[1] > thickness ? nut_m3[1] + tolerance : thickness, $fn = 6);
+    else if (standard == "M4" || standard == "m4" || standard == "4" || standard == "4")
+      cylinder(d = nut_m4[0] + tolerance, h = nut_m4[1] > thickness ? nut_m4[1] + tolerance : thickness, $fn = 6);
 }
 
 module mounting(thickness, diameter = 4.7, screws = false, countersunk = false, nuts = false, standoffs = false) {
@@ -50,11 +52,11 @@ module mounting(thickness, diameter = 4.7, screws = false, countersunk = false, 
     for (i = MOUNTING_HOLES) {
       translate([i[0], i[1], 0]) {
         if (countersunk && !nuts && diameter >= 3 && diameter <= 3.5)
-          translate([0, 0, thickness - cone_height_m3])
-            cylinder(d1 = diameter, d2 = diameter * 2 + 0.4, h = cone_height_m3);
+          translate([0, 0, thickness - cone_height_m3 - .5])
+            cylinder(d1 = diameter, d2 = diameter * 2 + 0.4, h = cone_height_m3 + .5);
         else if (countersunk && !nuts && diameter >= 4 && diameter <= 4.5)
-          translate([0, 0, thickness - cone_height_m4])
-            cylinder(d1 = diameter, d2 = diameter * 2 + 0.4, h = cone_height_m4); 
+          translate([0, 0, thickness - cone_height_m4 - .5])
+            cylinder(d1 = diameter, d2 = diameter * 2 + 0.4, h = cone_height_m4 + .5); 
         else if (!countersunk && nuts && diameter == 3)
           nut_cutout("M3", thickness);
         else if (!countersunk && nuts && diameter == 4)
@@ -136,7 +138,7 @@ module switch_plate(thickness = 2.5) {
   max_thickness = 4.7;
   mx_plate_thickness = 1.5;
 
-  translate([13, 3.2, 14]) difference() {
+  translate([3, 3.2, 10]) difference() {
     linear_extrude(max_thickness)
       import("./svg/PandaWings_contour_half_switch_plate.svg", dpi = 300);
     translate([0, 0, -.1]) linear_extrude(max_thickness - mx_plate_thickness + .1)
@@ -147,14 +149,32 @@ module switch_plate(thickness = 2.5) {
   }
 }
 
+module wrist_rest_mounting(thickness, case_height, cutout = false) {
+  translate([82, 10, 0]) {
+    wr_loc = [ [0, 0], [40, 9.5] ];
+    size = [9, 20, thickness + .2];
+
+    for (i = wr_loc) {
+      translate([i[0], i[1], -.1]) union () {
+        cube([size[0], size[1] - size[0] / 2, size[2]]);
+        translate([size[0] / 2, size[1] - size[0] / 2, 0]) {
+          cylinder(d = size[0], h = size[2]);
+          cylinder(d = 2.95, h = case_height - 1.5);
+        }
+      }
+    }
+  }
+}
+
 module keyboard_case(wrist_rest = true, thickness = 2.5, min_thickness = 1.5, pcb_thickness = 1.6) {
   // heights
   battery_connector_height = 5;
   above_pcb = 3;
-  below_pcb = wrist_rest ? thickness + battery_connector_height : min_thickness + BATTERY_SIZE[2] + 2;
+  below_pcb = min_thickness + BATTERY_SIZE[2] + 1;
   case_height = below_pcb + pcb_thickness + above_pcb;
 
   mounting_offset = [2.95, 3.2];
+  // todo: find height issue, below_pcb != underside of pcb
   
   tenting_locations = [
     [6, 85], 
@@ -163,66 +183,82 @@ module keyboard_case(wrist_rest = true, thickness = 2.5, min_thickness = 1.5, pc
     [116.25, 85],
   ];
 
-  translate([10, 0, 0]) { 
+  difference() {
+    union() {
+      difference() {
+        linear_extrude(case_height)
+          import("./svg/PandaWings_contour_case.svg", dpi = 300); 
+        translate([0, 0, thickness]) linear_extrude(case_height - thickness + .1)
+          import("./svg/PandaWings_contour_half_pcb.svg", dpi = 300);
+        translate([0, 0, -.1]) linear_extrude(thickness + .2)
+          import("./svg/PandaWings_contour_case_cutout.svg", dpi = 300);
+        translate([mounting_offset[0], mounting_offset[1], -.1]) mounting(thickness + .2, 3, nuts = true);
+      }
+      difference() {
+        translate([mounting_offset[0], mounting_offset[1], thickness]) union() {
+          mounting(below_pcb, 4.5, screws = true);
+          mounting(below_pcb - 2, 10, screws = true);
+        }
+      }
+
+
+      translate([mounting_offset[0], mounting_offset[1], thickness]) 
+        mounting(below_pcb, diameter = 4.5, standoffs = true);
+      
+      for (i = tenting_locations) {
+        translate([i[0], i[1], thickness -.1]) {
+          difference() {
+            cylinder(d = 10, h = 3);
+            nut_cutout("M4", 3);
+          } 
+        }
+      }
+    }
+
+    for (i = tenting_locations) translate([i[0], i[1], -.1]) cylinder(d = 4.2, h = below_pcb + .1);
+    translate([mounting_offset[0], mounting_offset[1], thickness - .1]) 
+      mounting(below_pcb + .2, 3.2, screws = true);
+
+    // battery
+    translate([20, 38, min_thickness + .15]) cube(BATTERY_SIZE);
+
+    // USB port
+    translate([7.5, 88, below_pcb + 2.5]) cube([9, 5, 8]);
+
+    // side switches
+    translate([0, 34, below_pcb]) cube([5, 24, 55]);
+
+    // wrist rest mounting
+    if (wrist_rest) {
+      wrist_rest_mounting(thickness, case_height, cutout = false);
+    }
+  }
+}
+
+module wrist_rest(height = 21) {
+  translate([40, -68, 0]) {
     difference() {
-      union() {
-        difference() {
-          linear_extrude(case_height)
-            import("./svg/PandaWings_contour_case.svg", dpi = 300); 
-          translate([0, 0, thickness]) linear_extrude(case_height - thickness + .1)
-            import("./svg/PandaWings_contour_half_pcb.svg", dpi = 300);
-          translate([0, 0, -.1]) linear_extrude(thickness + .2)
-            import("./svg/PandaWings_contour_case_cutout.svg", dpi = 300);
-          translate([mounting_offset[0], mounting_offset[1], -.1]) mounting(thickness + .2, 3, nuts = true);
-        }
-        difference() {
-          translate([mounting_offset[0], mounting_offset[1], thickness]) union() {
-            mounting(below_pcb, 4.5, screws = true);
-            mounting(below_pcb - 2, 10, screws = true);
-          }
-        }
-        translate([mounting_offset[0], mounting_offset[1], thickness]) 
-          mounting(below_pcb, diameter = 4.5, standoffs = true);
-        
-        for (i = tenting_locations) {
-          translate([i[0], i[1], thickness -.1]) {
-            difference() {
-              cylinder(d = 10, h = 3);
-              nut_cutout("M4", 3);
-            } 
-          }
-        }
-      }
+      linear_extrude(height)
+        import("./svg/PandaWings_contour_wrist_rest.svg", dpi = 300);
 
-      for (i = tenting_locations) translate([i[0], i[1], -.1]) cylinder(d = 4.2, h = below_pcb + .1);
-      translate([mounting_offset[0], mounting_offset[1], thickness - .1]) 
-        mounting(below_pcb + .2, 3.2, screws = true);
+    translate([27, -49, height - .1])
+      rotate([0, 0, 20])
+        rotate([5, 0, 0])
+        cube(100);
+    }
+  }
+}
 
-      // battery
-      if (!wrist_rest)
-        translate([20, 38, min_thickness + .15]) cube(BATTERY_SIZE);
+module tenting_caps(diameter = 12) {
+  m4_diameter = 7 + .1;
+  m4_head_height = 4;
 
-      // USB port
-      translate([7.5, 88, below_pcb + 2.5]) cube([9, 5, 8]);
-
-      // side switches
-      translate([0, 34, below_pcb]) cube([5, 24, 5]);
-
-      // wrist rest mounting
-      translate([82, 10, 0]) {
-        wr_loc = [ [0, 0], [40, 9.5] ];
-        size = [9, 20, thickness + .2];
-
-        for (i = wr_loc) {
-          translate([i[0], i[1], -.1]) union () {
-            cube([size[0], size[1] - size[0] / 2, size[2]]);
-            translate([size[0] / 2, size[1] - size[0] / 2, 0]) {
-              cylinder(d = size[0], h = size[2]);
-              cylinder(d = 2.95, h = 12);
-            }
-          }
-        }
-      }
+  for (i = [0:3]) {
+    translate([0, -diameter * 1.25 * i, 0]) difference() {
+      cylinder(d = diameter, h = m4_head_height + (diameter - m4_diameter) / 4);
+      
+      translate([0, 0, (diameter - m4_diameter) / 4])
+        cylinder(d = m4_diameter, h = m4_head_height + .1);
     }
   }
 }
@@ -232,4 +268,8 @@ if (DONGLE_CASE) translate([0, 120, 0]) dongle_case();
 
 if (SWITCH_PLATE) switch_plate();
 
-if (KEYBOARD_CASE) keyboard_case(wrist_rest = false);
+if (KEYBOARD_CASE) keyboard_case(wrist_rest = WRIST_REST);
+
+if (WRIST_REST) wrist_rest();
+
+if (TENTING_CAPS) translate([10, -10, 0]) tenting_caps();
