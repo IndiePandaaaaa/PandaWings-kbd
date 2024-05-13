@@ -3,6 +3,8 @@
 use <des/MX_DES_Thumb.scad>
 use <des/MX_DES_Standard.scad>
 
+RENDER_ALL_CAPS = true;
+
 // cherry activation point
 SILVER = 1.2;
 RED = 2;
@@ -11,7 +13,7 @@ RED = 2;
 RING_009 = 1.8;
 
 // needed keys
-standard = [ [0, 12], [1, 12], [2, 10] ];
+standard = [ [0, 10], [1, 12], [2, 12] ];
 thumbs = [ [0, 1], [1, 1], [2, 1] ];
 
 
@@ -49,10 +51,12 @@ module thumb_caps(id, switch_activation_point = 0, o_ring_thickness = 0) {
 
 
 // alphanumerical keycaps
-translate([0, 30, 0]) {
+translate([10, 30, 0]) {
   for (i = [0:len(standard) - 1]) {
-    translate([0, 20 * i, 0]) {
-      standard_caps(id = standard[i][0], switch_activation_point = SILVER, o_ring_thickness = RING_009);
+    for (j = [0:RENDER_ALL_CAPS ? standard[i][1] : 0]) {
+      translate([RENDER_ALL_CAPS ? 20 * j - (20 * standard[i][1]) / 2 : 0, 20 * i, 0]) {
+        standard_caps(id = standard[i][0], switch_activation_point = SILVER, o_ring_thickness = RING_009);
+      }
     }
   }
 }
