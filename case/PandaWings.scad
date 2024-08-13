@@ -13,9 +13,10 @@ KEYBOARD_CASE = true;
 SWITCH_PLATE = true;
 
 // CASE ADDONS
-WRIST_REST = true;
-LAPTOP_STANDOFFS = true;
+WRIST_REST = false;
+LAPTOP_STANDOFFS = false;
 TENTING_CAPS = true;
+TENTING_SOCKET = true;
 
 
 BATTERY_SIZE = [41.2, 29.5, 4.8];  // Battery 600mAh (Jauch LP503040JH)
@@ -183,6 +184,8 @@ module keyboard_case(wrist_rest = true, thickness = 2.5, min_thickness = 1.5, pc
     [116.25, 85],
   ];
 
+  tenting_socket_pos = [88, 66, 5.2];
+
   difference() {
     union() {
       difference() {
@@ -194,6 +197,7 @@ module keyboard_case(wrist_rest = true, thickness = 2.5, min_thickness = 1.5, pc
           import("./svg/PandaWings_contour_case_cutout.svg", dpi = 300);
         translate([mounting_offset[0], mounting_offset[1], -.1]) mounting(thickness + .2, 3, nuts = true);
       }
+      translate([tenting_socket_pos[0], tenting_socket_pos[1], 0]) cylinder(d = 26, h = tenting_socket_pos[2]);
       difference() {
         translate([mounting_offset[0], mounting_offset[1], thickness]) union() {
           mounting(below_pcb, 4.5, screws = true);
@@ -229,8 +233,35 @@ module keyboard_case(wrist_rest = true, thickness = 2.5, min_thickness = 1.5, pc
     translate([0, 34, below_pcb]) cube([5, 24, 55]);
 
     // wrist rest mounting
-    if (wrist_rest) {
-      wrist_rest_mounting(thickness, case_height, cutout = false);
+    wrist_rest_mounting(thickness, case_height, cutout = false);
+
+    // tenting socket
+    translate([tenting_socket_pos[0], tenting_socket_pos[1], -.1]) cylinder(d = 5.1, h = tenting_socket_pos[2] + .2); // UNC 1/4" threading
+  }
+
+}
+
+module tenting_socket() {
+  if (TENTING_SOCKET) {
+    difference() {
+      screw_od = 3.5;
+      depth = screw_od * 4;
+      rotate([-90, 0, 0]) linear_extrude(depth) {
+        polygon([
+          [0, 0],
+          [depth * 5, 0],
+          [depth * 5, screw_od],
+          [depth * 4, screw_od],
+          [depth * 3, depth * 0.75],
+          [depth * 2, depth * 0.75],
+          [depth * 1, screw_od],
+          [0, screw_od],
+        ]);
+      }
+      for (i = [0:1]) {
+        translate([depth / 2 + depth * 4 * i, depth / 2, -.1-screw_od]) cylinder(d1 = (screw_od + .5) * 2, d2 = (screw_od + .5), h = screw_od + .2);
+      }
+      translate([depth * 2.5, depth /2, -.1 - depth]) cylinder(d = 5.1, h = depth + .2);
     }
   }
 }
@@ -276,6 +307,8 @@ union() {
         if (WRIST_REST) wrist_rest();
 
         if (TENTING_CAPS) translate([10, -10, 0]) tenting_caps();
+
+        if (TENTING_SOCKET) translate([30, -20, 0]) tenting_socket();
       }
     }
   }
