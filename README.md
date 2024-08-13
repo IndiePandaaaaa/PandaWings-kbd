@@ -15,10 +15,8 @@ or display can be chosen while building.
 
 ## Lineup
 
-- PandaWings v1 - Cherry MX switches
-  ([EN](corne-classic/doc/buildguide_en.md)):
+- PandaWings v1 - Cherry MX switches: <br>
   Hotswappable Cherry MX switches, with LEDs, optional per-key-RGB or displays
-- [PLANNED] PandaWings v2 - Cherry MX and Chocolate switches
-  ([EN](corne-chocolate/doc/buildguide_en.md)):
+- [PLANNED] PandaWings v2 - Cherry MX and Chocolate switches: <br>
   Hotswappable Cherry MX and Chocolate switches
 
