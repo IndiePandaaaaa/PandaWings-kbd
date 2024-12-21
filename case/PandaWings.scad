@@ -242,27 +242,47 @@ module keyboard_case(wrist_rest = true, thickness = 2.5, min_thickness = 1.5, pc
 }
 
 module tenting_socket() {
-  if (TENTING_SOCKET) {
-    difference() {
-      screw_od = 3.5;
-      depth = screw_od * 4;
-      rotate([-90, 0, 0]) linear_extrude(depth) {
-        polygon([
-          [0, 0],
-          [depth * 5, 0],
-          [depth * 5, screw_od],
-          [depth * 4, screw_od],
-          [depth * 3, depth * 0.75],
-          [depth * 2, depth * 0.75],
-          [depth * 1, screw_od],
-          [0, screw_od],
-        ]);
-      }
-      for (i = [0:1]) {
-        translate([depth / 2 + depth * 4 * i, depth / 2, -.1-screw_od]) cylinder(d1 = (screw_od + .5) * 2, d2 = (screw_od + .5), h = screw_od + .2);
-      }
-      translate([depth * 2.5, depth /2, -.1 - depth]) cylinder(d = 5.1, h = depth + .2);
+  difference() {
+    screw_od = 3.5;
+    depth = screw_od * 4;
+    rotate([-90, 0, 0]) linear_extrude(depth) {
+    polygon([
+      [0, 0],
+      [depth * 5, 0],
+      [depth * 5, screw_od],
+      [depth * 4, screw_od],
+      [depth * 3, depth * 0.75],
+      [depth * 2, depth * 0.75],
+      [depth * 1, screw_od],
+      [0, screw_od],
+    ]);
+  }
+  for (i = [0:1]) {
+    translate([depth / 2 + depth * 4 * i, depth / 2, -.1-screw_od]) cylinder(d1 = (screw_od + .5) * 2, d2 = (screw_od + .5), h = screw_od + .2);
+  }
+  translate([depth * 2.5, depth /2, -.1 - depth]) cylinder(d = 5.1, h = depth + .2);
+  } 
+  translate([0, -20, 0]) difference() {
+    screw_od = 3.5;
+    depth = screw_od * 4;
+    rotate([-90, 0, 0]) linear_extrude(depth) {
+      polygon([
+        [0, 0],
+        [depth * 5, 0],
+        [depth * 5, screw_od],
+        [depth * 3.5, screw_od],
+        [depth * 2.5, screw_od + depth],
+        [depth * 2.4, screw_od + depth],
+        [depth * 1.5, screw_od],
+        [0, screw_od],
+      ]);
     }
+    for (i = [0:1]) {
+      translate([depth / 2 + depth * 4 * i, depth / 2, -.1-screw_od]) cylinder(d1 = (screw_od + .5) * 2, d2 = (screw_od + .5), h = screw_od + .2);
+    }
+    rotate([0, -45, 0])
+      translate([depth * 1.5, depth / 2, -.1 - depth * 5]) 
+        cylinder(d = 5.1, h = depth * 5 + .2);
   }
 }
 
