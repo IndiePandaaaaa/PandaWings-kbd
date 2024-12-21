@@ -6,9 +6,9 @@ use <des/MX_DES_Standard.scad>
 RENDER_ALL_CAPS = false;
 
 // cherry activation point
-SILVER = 1.2;
-RED = 2;
-GLORIOUS_PANDA = 2.5;
+CSILVER = 1.2;  // cherry mx silver
+CRED = 2;  // cherry mx red
+GPANDA = 2.5;  // glorious panda
 
 // o-ring uncompressed thickness
 RING_009 = 1.8;
@@ -51,13 +51,13 @@ module thumb_caps(id, switch_activation_point = 0, o_ring_thickness = 0) {
   );
 }
 
-
+/*
 // alphanumerical keycaps
 translate([10, 30, 0]) {
   for (i = [0:len(standard) - 1]) {
     for (j = [0:RENDER_ALL_CAPS ? standard[i][1] : 0]) {
       translate([RENDER_ALL_CAPS ? 20 * j - (20 * standard[i][1]) / 2 : 0, 20 * i, 0]) {
-        standard_caps(id = standard[i][0], switch_activation_point = GLORIOUS_PANDA, o_ring_thickness = GLORIOUS_A40_THIN);
+        standard_caps(id = standard[i][0], switch_activation_point = GPANDA, o_ring_thickness = GLORIOUS_A40_THIN);
       }
     }
   }
@@ -70,10 +70,11 @@ translate([10, 0, 0]) {
       translate([20 * i, 0, 0]) {
         for (x = [0:len(thumbs) - 1]) {
           translate([20 * x, 0, 0]) {
-            thumb_caps(id = thumbs[x][0], switch_activation_point = GLORIOUS_PANDA, o_ring_thickness = GLORIOUS_A40_THIN);
+            thumb_caps(id = thumbs[x][0], switch_activation_point = GPANDA, o_ring_thickness = GLORIOUS_A40_THIN);
           }
         }
       }
     }
   }
 }
+*/
