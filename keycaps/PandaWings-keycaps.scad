@@ -18,7 +18,7 @@ GLORIOUS_A40_THIN = 1.5;
 // needed keys
 standard = [ [0, 10], [1, 12], [2, 12] ];
 thumbs = [ [0, 1], [1, 1], [2, 1] ];
-keycount = 40;
+keycount = 6 + standard[0][1] + standard[1][1] + standard[2][1];
 
 
 module standard_caps(id) {
@@ -52,7 +52,7 @@ module thumb_caps(id) {
 union() {
   // alphanumerical keycaps
   translate([10, 30, 0]) for (i = [0:len(standard) - 1]) {
-    for (j = [0:RENDER_ALL_CAPS ? standard[i][1] : 0]) {
+    for (j = [0:(RENDER_ALL_CAPS ? standard[i][1]:0)]) {
       translate([RENDER_ALL_CAPS ? 20 * j - (20 * standard[i][1]) / 2 : 0, 20 * i, 0]) standard_caps(id = standard[i][0]);
     }
   }
@@ -69,4 +69,3 @@ union() {
     translate([15*(i%5), -15*floor(i/5), 0]) travel_stop(GPANDA, GLORIOUS_A40_THIN);
   }
 }
-
